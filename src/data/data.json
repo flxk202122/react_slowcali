@@ -1,0 +1,142 @@
+{
+    "mainlogo": [
+        {
+            "bg_src": "./img/logo_blue"
+        },
+        {
+            "bg_src": "./img/logo_white"
+        }
+    ],
+    "gnb": [
+        {
+            "gnb_nm": "브랜드소개",
+            "gnb_href": "",
+            "ultwo": [
+                {
+                    "gnb_nm": "우리의 시작",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "우리의 이야기",
+                    "gnb_href": ""
+                }
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                }
+            ]
+        },
+        {
+            "gnb_nm": "메뉴",
+            "gnb_href": "",
+            "ultwo": [
+                {
+                    "gnb_nm": "포케",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "보울",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "그릴",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "사이드",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "칼로리",
+                    "gnb_href": ""
+                }
+            ]
+        },
+        {
+            "gnb_nm": "매장",
+            "gnb_href": "",
+            "ultwo": [
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                }
+            ]
+        },
+        {
+            "gnb_nm": "성공전략",
+            "gnb_href": "",
+            "ultwo": [
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                }
+            ]
+        },
+        {
+            "gnb_nm": "창업문의",
+            "gnb_href": "",
+            "ultwo": [
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                },
+                {
+                    "gnb_nm": "",
+                    "gnb_href": ""
+                }
+            ]
+        }
+    ]
+}
