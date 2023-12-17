@@ -34,6 +34,30 @@ function Header(props) {
                     <button className='tab_btn'>
                         <span className='visually-hidden'>메뉴창 열기</span>
                     </button>
+                    <div className='tab_box position-absolute d-none'>
+                        <ul id="tab_list">
+                            {
+                                props.datasrc.gnb.map((el, idx) => {
+                                    return (
+                                        <li key={idx} className={clsx('position-relative', el.gnb_cls)}>
+                                            <a href={el.gnb_href}>{el.gnb_nm}</a>
+                                            <ul className='ul2d position-absolute'>
+                                                {
+                                                    el.ultwo.map((eel, iidx) => {
+                                                        return (
+                                                            <li>
+                                                                <a href={eel.gnb_href}>{eel.gnb_nm}</a>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
