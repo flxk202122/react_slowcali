@@ -1,10 +1,15 @@
 import React from 'react'
 import Header from './Header'
+//data
+import datainfo from '../data/data.json'
+
+//data
+
 
 function Fullslow() {
     return (
         <>
-            <Header></Header>
+            <Header datasrc={datainfo.sectionhd} />
         </>
     )
 }
