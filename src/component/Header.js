@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/header.scss';
+import clsx from 'clsx';
 
 
 function Header(props) {
@@ -11,7 +12,7 @@ function Header(props) {
                     {
                         props.datasrc.gnb.map((el, idx) => {
                             return (
-                                <li key={idx} className='position-relative'>
+                                <li key={idx} className={clsx('position-relative', el.gnb_cls)}>
                                     <a href={el.gnb_href}>{el.gnb_nm}</a>
                                     <ul className='ul2d position-absolute'>
                                         {

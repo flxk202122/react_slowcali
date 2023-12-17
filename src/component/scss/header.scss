@@ -119,8 +119,18 @@
                 &::after {
                     font-family: 'bootstrap-icons';
                     content: ' \F282';
-                    display: block;
-                    padding: 2rem;
+                    font-size: 0.8rem;
+                    position: absolute;
+                    right: 2rem;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+
+                &:hover {
+                    &::after {
+                        font-family: 'bootstrap-icons';
+                        content: ' \F286';
+                    }
                 }
             }
         }
@@ -129,8 +139,25 @@
 }
 
 //header gnb tab
+#hd.active {
+    #gnb_tab {
+        .tab_btn {
+            &::after {
+                color: #2625A1;
+            }
+        }
+    }
+}
+
 #hd {
     #gnb_tab {
-        .tab_btn {}
+        .tab_btn {
+            &::after {
+                font-family: 'bootstrap-icons';
+                content: '\F44B';
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
     }
 }
