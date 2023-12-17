@@ -4,21 +4,21 @@ import './scss/header.scss';
 
 function Header(props) {
     return (
-        <header id="hd">
-            <div className='container d-flex align-item-center justify-content-between'>
+        <header id="hd" className='active'>
+            <div className='container d-flex align-items-center justify-content-between'>
                 <h1><a href=""><span className='visually-hidden'>슬로우캘리 로고이미지</span></a></h1>
                 <ul id="gnb" className='d-flex align-item-center justify-content-between'>
                     {
                         props.datasrc.gnb.map((el, idx) => {
                             return (
-                                <li key={idx}>
-                                    <a href="{el.gnb_href}">{el.gnb_nm}</a>
-                                    <ul>
+                                <li key={idx} className='position-relative'>
+                                    <a href={el.gnb_href}>{el.gnb_nm}</a>
+                                    <ul className='ul2d position-absolute'>
                                         {
                                             el.ultwo.map((eel, iidx) => {
                                                 return (
                                                     <li>
-                                                        <a href="{eel.gnb_href}">{eel.gnb_nm}</a>
+                                                        <a href={eel.gnb_href}>{eel.gnb_nm}</a>
                                                     </li>
                                                 )
                                             })

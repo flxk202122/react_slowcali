@@ -4,6 +4,7 @@
             {
                 "gnb_nm": "브랜드소개",
                 "gnb_href": "",
+                "gnb_cls": "down",
                 "ultwo": [
                     {
                         "gnb_nm": "우리의 시작",
@@ -12,24 +13,13 @@
                     {
                         "gnb_nm": "우리의 이야기",
                         "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
                     }
                 ]
             },
             {
-                "gnb_nm": "메뉴",
+                "gnb_nm": "메뉴소개",
                 "gnb_href": "",
+                "gnb_cls": "down",
                 "ultwo": [
                     {
                         "gnb_nm": "포케",
@@ -56,80 +46,20 @@
             {
                 "gnb_nm": "매장",
                 "gnb_href": "",
-                "ultwo": [
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    }
-                ]
+                "gnb_cls": "",
+                "ultwo": []
             },
             {
                 "gnb_nm": "성공전략",
                 "gnb_href": "",
-                "ultwo": [
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    }
-                ]
+                "gnb_cls": "",
+                "ultwo": []
             },
             {
                 "gnb_nm": "창업문의",
                 "gnb_href": "",
-                "ultwo": [
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    },
-                    {
-                        "gnb_nm": "",
-                        "gnb_href": ""
-                    }
-                ]
+                "gnb_cls": "",
+                "ultwo": []
             }
         ]
     }
