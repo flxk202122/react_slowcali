@@ -1,0 +1,13 @@
+#videowrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    z-index: 1;
+
+    .video {
+        width: 100vw;
+        height: 100vh;
+    }
+}

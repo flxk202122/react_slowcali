@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import Mainvisual from './Mainvisual'
 //data
 import datainfo from '../data/data.json'
 
@@ -10,6 +11,7 @@ function Fullslow() {
     return (
         <>
             <Header datasrc={datainfo.sectionhd} />
+            <Mainvisual />
         </>
     )
 }
