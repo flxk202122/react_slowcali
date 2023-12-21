@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react_slowcali.github.io/static/css/main.f8954afa.css",
+    "main.css": "/react_slowcali.github.io/static/css/main.8e138686.css",
     "main.js": "/react_slowcali.github.io/static/js/main.75a94d39.js",
     "index.html": "/react_slowcali.github.io/index.html",
-    "main.f8954afa.css.map": "/react_slowcali.github.io/static/css/main.f8954afa.css.map",
+    "main.8e138686.css.map": "/react_slowcali.github.io/static/css/main.8e138686.css.map",
     "main.75a94d39.js.map": "/react_slowcali.github.io/static/js/main.75a94d39.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8954afa.css",
+    "static/css/main.8e138686.css",
     "static/js/main.75a94d39.js"
   ]
 }
