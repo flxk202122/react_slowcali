@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/flxk202122/react_slowcali.github.io/static/css/main.f8954afa.css",
+    "main.js": "/flxk202122/react_slowcali.github.io/static/js/main.9600f76d.js",
+    "index.html": "/flxk202122/react_slowcali.github.io/index.html",
+    "main.f8954afa.css.map": "/flxk202122/react_slowcali.github.io/static/css/main.f8954afa.css.map",
+    "main.9600f76d.js.map": "/flxk202122/react_slowcali.github.io/static/js/main.9600f76d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8954afa.css",
+    "static/js/main.9600f76d.js"
+  ]
+}
