@@ -5,12 +5,14 @@ import './scss/mainvisual.scss';
 function Mainvisual(props) {
     return (
         <div id='videowrapper'>
+            <div id="visual_logo">
+                <div className='bar'></div>
+                <span className='active'>창업문의 바로가기</span>
+            </div>
             <YouTube
                 className='video'
                 videoId="BY6p5JwJvVY" //동영상 주소
                 opts={{
-                    width: "100%",
-                    height: "0",
                     playerVars: {
                         autoplay: 1, //자동 재생 여부 
                         modestbranding: 0, //컨트롤 바에 유튜브 로고 표시 여부
@@ -19,12 +21,13 @@ function Mainvisual(props) {
                         controls: 0,
                         disablekb: 1
                     },
-                }}
+                }
+                }
                 onReady={(e) => {
                     e.target.mute(); //소리 끔
                 }}
             />
-        </div>
+        </div >
 
     )
 }
