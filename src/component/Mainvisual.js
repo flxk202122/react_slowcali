@@ -10,7 +10,7 @@ function Mainvisual(props) {
                 videoId="BY6p5JwJvVY" //동영상 주소
                 opts={{
                     width: "100%",
-                    height: "100%",
+                    height: "0",
                     playerVars: {
                         autoplay: 1, //자동 재생 여부 
                         modestbranding: 0, //컨트롤 바에 유튜브 로고 표시 여부

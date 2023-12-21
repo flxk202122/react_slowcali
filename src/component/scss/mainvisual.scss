@@ -1,13 +1,18 @@
 #videowrapper {
-    position: fixed;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 
     z-index: 1;
 
-    .video {
-        width: 100vw;
-        height: 100vh;
+
+    .video iframe {
+        position: absolute;
+        top: -100px;
+        bottom: -100px;
+        left: -100px;
+        right: -100px;
+        padding-top: 100vw;
     }
 }
