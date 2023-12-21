@@ -1,9 +1,11 @@
 // header common
 #hd {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #2625A1;
 
     .container {
         background-color: #2625A1;
+
 
         a {
             color: #fff;
@@ -45,6 +47,23 @@
         li:nth-of-type(2) {
             a {
                 width: 150px;
+            }
+        }
+
+        // ul2d 
+        li.down {
+            >a {
+                &::after {
+                    font-family: 'bootstrap-icons';
+                    content: ' \F282';
+                    font-size: 0.8rem;
+                    position: absolute;
+                    right: 2rem;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    color: #fff;
+                }
+
             }
         }
     }
@@ -152,12 +171,42 @@
 
 #hd {
     #gnb_tab {
+        .container {
+            background-color: #fff;
+        }
+
         .tab_btn {
             &::after {
                 font-family: 'bootstrap-icons';
                 content: '\F44B';
                 font-size: 2rem;
                 color: #fff;
+            }
+        }
+    }
+
+    //side tab_btn click
+    .container {
+
+
+        #gnb_tab.show {
+
+            .tab_box {
+                left: 0;
+                top: calc(100% + 1px);
+                background: #fff;
+                z-index: 50;
+                width: 100vw;
+                height: 100vh;
+
+                #tab_list {
+
+                    a {
+                        color: #000 !important;
+                        z-index: 100;
+                    }
+
+                }
             }
         }
     }
