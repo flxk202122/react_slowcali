@@ -2,7 +2,7 @@
   "name": "solwcaliproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/flxk202122/react_slowcali.github.io",
+  "homepage": "https://flxk202122.github.io/react_slowcali.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
