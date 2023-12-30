@@ -27,3 +27,9 @@
     transform: translate(-50%, -50%);
 
 }
+
+/* tab버튼 클릭했을 경우 */
+#hd.tabopen h1 a::after {
+    background: url(./img/logo_blue.png)center center no-repeat;
+    background-size: 100%;
+}

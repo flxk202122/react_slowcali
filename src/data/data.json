@@ -5,6 +5,7 @@
                 "gnb_nm": "브랜드소개",
                 "gnb_href": "",
                 "gnb_cls": "down",
+                "gnb_bg": "tab_brand",
                 "ultwo": [
                     {
                         "gnb_nm": "우리의 시작",
@@ -20,6 +21,7 @@
                 "gnb_nm": "메뉴소개",
                 "gnb_href": "",
                 "gnb_cls": "down",
+                "gnb_bg": "tab_menu",
                 "ultwo": [
                     {
                         "gnb_nm": "포케",
@@ -47,18 +49,21 @@
                 "gnb_nm": "매장",
                 "gnb_href": "",
                 "gnb_cls": "",
+                "gnb_bg": "tab_store",
                 "ultwo": []
             },
             {
                 "gnb_nm": "성공전략",
                 "gnb_href": "",
                 "gnb_cls": "",
+                "gnb_bg": "tab_top",
                 "ultwo": []
             },
             {
                 "gnb_nm": "창업문의",
                 "gnb_href": "",
                 "gnb_cls": "",
+                "gnb_bg": "tab_come",
                 "ultwo": []
             }
         ]
