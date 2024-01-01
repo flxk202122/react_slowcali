@@ -254,12 +254,19 @@
                 position: absolute;
                 height: 100vh;
                 border: 1px solid rgba(0, 0, 0, 0.05);
-                left: 30%;
                 top: 0;
+                left: 30%;
             }
 
+            li.active {
+                >a {
+                    color: #2625A1 !important;
+                }
+            }
 
             li {
+                transition: 0.5s;
+
                 a {
                     font-size: 1.8rem;
                     display: block;
@@ -267,17 +274,16 @@
                 }
 
                 .bg_box {
-                    right: -200%;
+                    right: 0;
                     top: 0;
                     width: 30vw;
-                    height: 30rem;
+                    height: 30vw;
                 }
             }
 
             .ul2d {
                 top: 0;
-                left: 100%;
-                width: 60%;
+                left: 30%;
 
 
                 li {
@@ -285,6 +291,7 @@
                     a {
                         display: block;
                         font-size: 1.2rem;
+                        padding-left: 1rem;
                     }
 
                 }

@@ -9,7 +9,7 @@ function Header(props) {
 
     const [handOn, sethandOn] = useState(false);
     const [toggleBtn, settoggleBtn] = useState(false);
-    const [showTab, setshowTab] = useState(null)
+    const [showTab, setshowTab] = useState(0);
 
 
 
@@ -58,12 +58,12 @@ function Header(props) {
                         <span className='visually-hidden'>메뉴창 열기</span>
                     </button>
                     <div className='tab_box position-absolute'>
-                        <div className='container'>
+                        <div className='container position-relative'>
                             <ul id="tab_list">
                                 {
                                     props.datasrc.gnb.map((el, idx) => {
                                         return (
-                                            <li key={idx} className={`position-relative ${el.gnb_cls}`} onClick={() => { setshowTab(idx) }}>
+                                            <li key={idx} className={`${el.gnb_cls} ${showTab === idx ? "active" : ""}`} onClick={() => { setshowTab(idx) }}>
                                                 <Link to="/">{el.gnb_nm}</Link>
                                                 {showTab === idx &&
                                                     <ul className="ul2d position-absolute">
@@ -82,7 +82,8 @@ function Header(props) {
                                                     <div className='bg_box position-absolute' style={{
                                                         backgroundImage: `url(./img/${el.gnb_bg})`,
                                                         backgroundRepeat: 'no-repeat',
-                                                        backgroundSize: 'cover'
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center'
                                                     }}>
                                                     </div>
                                                 }
