@@ -83,6 +83,7 @@
         }
 
         .tab_btn {
+
             &::after {
                 font-family: 'bootstrap-icons';
                 content: '\F44B';
@@ -185,9 +186,12 @@
 
     //부트스트랩 아이콘 컬러변경
     #gnb_tab {
+
         .tab_btn {
+
             &::after {
                 color: #2625A1;
+                transition: 0.5s;
             }
         }
     }
@@ -202,6 +206,7 @@
     //부트스트랩 아이콘 x
     #gnb_tab {
         .tab_btn {
+
             &::after {
                 font-family: 'bootstrap-icons';
                 content: '\F659';
@@ -284,6 +289,7 @@
 
                 }
             }
+
         }
     }
 

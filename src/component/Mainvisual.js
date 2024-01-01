@@ -1,6 +1,10 @@
 import React from 'react'
 import YouTube from "react-youtube"
+
+import Cookies from 'js-cookie';
+
 import './scss/mainvisual.scss';
+
 
 function Mainvisual(props) {
     return (

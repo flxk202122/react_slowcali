@@ -1,13 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './scss/header.scss';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
+
 
 
 function Header(props) {
 
-    // const [toggleBtn, settoggleBtn] = useState(true);
     const [handOn, sethandOn] = useState(false);
     const [toggleBtn, settoggleBtn] = useState(false);
+    const [showTab, setshowTab] = useState(null)
+
+
 
     const handleMouseOver = () => {
         sethandOn(true);
@@ -19,25 +23,26 @@ function Header(props) {
 
 
 
+
     return (
         <header id="hd"
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
             className={`position-relative ${!toggleBtn && handOn ? "active" : ""} ${toggleBtn ? "tabopen" : ""}`}>
             <div className='container d-flex align-items-center justify-content-between'>
-                <h1><a href=""><span className='visually-hidden'>슬로우캘리 로고이미지</span></a></h1>
+                <h1><Link to="/"><span className='visually-hidden'>슬로우캘리 로고이미지</span></Link></h1>
                 <ul id="gnb" className='d-flex align-item-center justify-content-between'>
                     {
                         props.datasrc.gnb.map((el, idx) => {
                             return (
                                 <li key={idx} className={clsx('position-relative', el.gnb_cls)}>
-                                    <a href={el.gnb_href}>{el.gnb_nm}</a>
+                                    <Link to="/">{el.gnb_nm}</Link>
                                     <ul className='ul2d position-absolute'>
                                         {
                                             el.ultwo.map((eel, iidx) => {
                                                 return (
                                                     <li>
-                                                        <a href={eel.gnb_href}>{eel.gnb_nm}</a>
+                                                        <Link to="/">{eel.gnb_nm}</Link>
                                                     </li>
                                                 )
                                             })
@@ -58,24 +63,29 @@ function Header(props) {
                                 {
                                     props.datasrc.gnb.map((el, idx) => {
                                         return (
-                                            <li key={idx} className={clsx('position-relative', el.gnb_cls)}>
-                                                <a href={el.gnb_href}>{el.gnb_nm}</a>
-                                                <div className='bg_box position-absolute' style={{
-                                                    backgroundImage: `url(./img/${el.gnb_bg}.png)`,
-                                                    backgroundRepeat: 'no-repeat',
-                                                    backgroundSize: 'cover'
-                                                }}></div>
-                                                <ul className='ul2d position-absolute'>
-                                                    {
-                                                        el.ultwo.map((eel, iidx) => {
-                                                            return (
-                                                                <li key={iidx}>
-                                                                    <a href={eel.gnb_href}>{eel.gnb_nm}</a>
-                                                                </li>
-                                                            )
-                                                        })
-                                                    }
-                                                </ul>
+                                            <li key={idx} className={`position-relative ${el.gnb_cls}`} onClick={() => { setshowTab(idx) }}>
+                                                <Link to="/">{el.gnb_nm}</Link>
+                                                {showTab === idx &&
+                                                    <ul className="ul2d position-absolute">
+                                                        {
+                                                            el.ultwo.map((eel, iidx) => {
+                                                                return (
+                                                                    <li key={iidx}>
+                                                                        <Link to="/">{eel.gnb_nm}</Link>
+                                                                    </li>
+                                                                )
+                                                            })
+                                                        }
+                                                    </ul>
+                                                }
+                                                {showTab === idx &&
+                                                    <div className='bg_box position-absolute' style={{
+                                                        backgroundImage: `url(./img/${el.gnb_bg})`,
+                                                        backgroundRepeat: 'no-repeat',
+                                                        backgroundSize: 'cover'
+                                                    }}>
+                                                    </div>
+                                                }
                                             </li>
                                         )
                                     })
