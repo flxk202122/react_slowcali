@@ -3,13 +3,13 @@
         "gnb": [
             {
                 "gnb_nm": "브랜드소개",
-                "gnb_href": "",
+                "gnb_href": "Brandstory",
                 "gnb_cls": "down",
                 "gnb_bg": "tab_brand.jpeg",
                 "ultwo": [
                     {
                         "gnb_nm": "우리의 시작",
-                        "gnb_href": ""
+                        "gnb_href": "Brandstory"
                     },
                     {
                         "gnb_nm": "우리의 이야기",
@@ -65,6 +65,30 @@
                 "gnb_cls": "",
                 "gnb_bg": "tab_come.jpeg",
                 "ultwo": []
+            }
+        ]
+    },
+    "sectionbrandstory": {
+        "about": [
+            {
+                "about_txt": "더 슬로우 컴퍼니는 많은 사람들에게 세계의 다양한 식문화를 소개하는 비전을 가지고 있습니다. ",
+                "about_cls": "",
+                "about_bg": ""
+            },
+            {
+                "about_txt": "슬로우캘리는 하와이안 포케 현지의 맛을 선보이고자 공들여 만든 저희의 첫 번째 브랜드입니다. ",
+                "about_cls": "",
+                "about_bg": ""
+            },
+            {
+                "about_txt": "저희는 오랜 시간 하와이의 곳곳을 여행하며 다양한 포케를 접하고 조리법을 배워 하와이안 포케 현지의 맛을 한국인의 입맛에 맞게 연구하였습니다.",
+                "about_cls": "",
+                "about_bg": ""
+            },
+            {
+                "about_txt": "하와이안 포케에 대한 꾸준한 열정으로 더욱 많은 사람들과 건강하고 맛있는 문화를 공유할 수 있도록 노력하겠습니다",
+                "about_cls": "",
+                "about_bg": ""
             }
         ]
     }

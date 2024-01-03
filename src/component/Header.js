@@ -36,7 +36,7 @@ function Header(props) {
                         props.datasrc.gnb.map((el, idx) => {
                             return (
                                 <li key={idx} className={clsx('position-relative', el.gnb_cls)}>
-                                    <Link to="/">{el.gnb_nm}</Link>
+                                    <Link to={`/${el.gnb_href}`}>{el.gnb_nm}</Link>
                                     <ul className='ul2d position-absolute'>
                                         {
                                             el.ultwo.map((eel, iidx) => {

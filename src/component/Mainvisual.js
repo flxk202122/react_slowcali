@@ -1,7 +1,6 @@
 import React from 'react'
 import YouTube from "react-youtube"
 
-import Cookies from 'js-cookie';
 
 import './scss/mainvisual.scss';
 
@@ -9,7 +8,7 @@ import './scss/mainvisual.scss';
 function Mainvisual(props) {
     return (
         <div id='videowrapper'>
-            <div id="visual_logo">
+            <div id="visual_logo" className='move'>
                 <div className='bar'></div>
                 <span className='active'>창업문의 바로가기</span>
             </div>
