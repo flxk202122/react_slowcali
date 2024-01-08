@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Mainvisual from './Mainvisual'
 import Brandstory from './Brandstory'
+import Brandbrand from './Brandbrand'
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -16,8 +17,9 @@ function Fullslow() {
             <Header datasrc={datainfo.sectionhd} />
 
             <Routes>
-                <Route path='/' element={<Mainvisual />} datasrc={datainfo.sectionbrandstory} />
-                <Route path="/Brandstory" element={<Brandstory />} />
+                <Route path='/' element={<Mainvisual />} />
+                <Route path="/Brandstory" element={<Brandstory datasrc={datainfo.sectionbrand} />} />
+                <Route path="/Brandbrand" element={<Brandbrand datasrc={datainfo.sectionstory} />} />
             </Routes>
         </>
     )

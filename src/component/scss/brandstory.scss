@@ -1,6 +1,99 @@
 #brand_story {
+    height: 100vh;
     top: 0;
     position: relative;
     background-color: #F5F5F7;
+
+    .container {
+        padding: 3rem 0;
+
+        h2 {
+            padding: 3rem 2rem;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #2625A1;
+        }
+
+
+        .inner_box {
+
+            .img_box {
+                background-color: #fff;
+                width: 50vw;
+                border-radius: 100%;
+
+
+                img {
+                    max-width: 100%;
+                }
+
+            }
+
+            p {
+                padding: 0 2rem;
+                font-size: 1.2rem;
+
+                span {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    top: 25%;
+                }
+            }
+
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            width: auto;
+            height: auto;
+            right: 0;
+            left: unset;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            span {
+                position: relative;
+                display: block;
+                background-color: #2625A1;
+                width: 1rem;
+                height: 1rem;
+
+
+
+                &+span {
+                    margin-top: 2rem;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background-color: #2625A1;
+                    border-radius: 100%;
+                    display: block;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background-color: #2625A1;
+                    border-radius: 100%;
+                    display: block;
+                    top: -100%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                }
+
+
+            }
+        }
+    }
+
 
 }

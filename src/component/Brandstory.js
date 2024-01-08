@@ -1,40 +1,47 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import React, { useRef, useState } from 'react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import './scss/brandstory.scss'
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 function Brandstory(props) {
     return (
-        <section id="brand_story">
+        <section id="brand_story" className='position-relative'>
             <div className='container'>
+                <h2>브랜드 스토리</h2>
                 <Swiper
-                    // install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    modules={[Autoplay, Pagination]}
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    // }}
                     navigation
+                    slidesPerView={1}
                     pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
+                    loop={true}
                 >
-                    <h2>dd</h2>
 
-                    {/* {
+                    {
                         props.datasrc.about.map((el, idx) => {
                             return (
                                 <SwiperSlide key={idx}>
-                                    <h3>{el.about_txt}</h3>
-                                    <img src={`./img/${el.about_bg}`} alt="" />
+                                    <div className='inner_box d-flex align-items-center'>
+                                        <div className='img_box'>
+                                            <img src={`./img/${el.about_bg}`} alt="" />
+                                        </div>
+                                        <p>
+                                            <span className='position-absolute'>ABOUT</span>
+                                            {el.about_txt}
+                                        </p>
+                                    </div>
                                 </SwiperSlide>
                             )
                         })
-
-                    } */}
-
+                    }
                 </Swiper>
 
             </div>

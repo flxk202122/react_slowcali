@@ -41,8 +41,8 @@ function Header(props) {
                                         {
                                             el.ultwo.map((eel, iidx) => {
                                                 return (
-                                                    <li>
-                                                        <Link to="/">{eel.gnb_nm}</Link>
+                                                    <li key={iidx}>
+                                                        <Link to={`/${eel.gnb_href}`}>{eel.gnb_nm}</Link>
                                                     </li>
                                                 )
                                             })
