@@ -1,81 +1,78 @@
 img {
     max-width: 100%;
+
 }
 
-
 #brand_brand {
-
-    //active 상태 관리
     .inner_box {
-        .brand_tab_list {
-            li.active {
-                transition: 0.5s;
 
-                .txt_box {
-                    background-color: rgba(1, 8, 88, 0.699);
-
-                    p {
-                        display: block;
-                    }
-                }
-
-                .img_box {}
-            }
+        &::after {
+            content: '';
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
         }
-    }
 
-
-    //no-active
-
-    .inner_box {
         .brand_tab_list {
+            z-index: 20;
+            height: 100%;
+            position: absolute;
 
             li {
-                height: 100%;
+                border-left: 1px solid #fff;
+                transition: 0.3s;
+                padding: 0 1rem;
 
                 .txt_box {
-                    padding: 1rem;
-                    z-index: 10;
-                    height: 100%;
-                    border-left: 1px solid #fff;
-
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
 
                     h3 {
                         color: #fff;
                         font-weight: 400;
-                        z-index: 10;
+                        width: 100%;
                     }
-
 
                     p {
-                        display: none;
                         color: #fff;
+                        padding-top: 1.2rem;
+                        display: none;
                     }
+
                 }
 
-                .img_box {
-                    z-index: 1;
-                    left: 0;
-                    top: 0;
+                &.active {
+                    background-color: rgba(1, 8, 88, 0.699);
 
+                    .txt_box {
+                        text-align: left;
 
-                    &::after {
-                        content: '';
-                        z-index: 10;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                        background-color: rgba(0, 0, 0, 0.4);
+                        p {
+                            display: block;
+                        }
                     }
                 }
-
             }
 
         }
+
+        .brand_img_list {
+            top: 0;
+
+            li.img_box {
+                display: none;
+                transition: 0.3s;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
     }
-
-
-
 }

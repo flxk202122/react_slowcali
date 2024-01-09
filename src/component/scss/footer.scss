@@ -1,0 +1,36 @@
+ #ft {
+     background-color: #2625A1;
+
+     .container {
+         padding: 2rem 0;
+
+         h2 {
+             height: 100%;
+
+             a {
+                 display: block;
+                 max-width: 131px !important;
+                 width: 30vw;
+             }
+         }
+
+         p {
+             color: #fff;
+             margin-left: 3rem;
+         }
+
+         .icon_list {
+             color: #fff;
+             display: inline-block;
+             font-size: 2rem;
+             margin-left: 1rem;
+
+
+             i {
+                 &::after {}
+             }
+         }
+     }
+
+
+ }

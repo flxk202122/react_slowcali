@@ -9,11 +9,11 @@
                 "ultwo": [
                     {
                         "gnb_nm": "우리의 시작",
-                        "gnb_href": "Brandstory"
+                        "gnb_href": ""
                     },
                     {
                         "gnb_nm": "우리의 이야기",
-                        "gnb_href": "Brandbrand"
+                        "gnb_href": ""
                     }
                 ]
             },
@@ -121,6 +121,26 @@
                 "brand_txt": "하와이안 포케의 맛을 결정하는 가장 기본적인 요소는 재료의 신선함입니다. 재료의 신선함을 지키는 것의 중요함은 누구나 다 알고 있는 사실이지만 모두가 지키지는 못합니다. 그 이유는 각 재료마다 신선도를 지키기 위한 온도와 보관 방법이 다르기 때문에 기본적으로 메뉴에 사용할 재료의 이해도가 우선되기 때문이지요. 슬로우캘리는 다양한 재료의 특성에 맞는 배송과 보관 방법으로 신선함을 엄격히 유지합니다.",
                 "brand_cls": "",
                 "brand_bg": "story_fresh.jpeg"
+            }
+        ]
+    },
+    "sectionft": {
+        "ft_txt": "주식회사 더슬로우 컴퍼니 | 대표:전현제 | /개인정보관리책임자:전현제 5층 (동교동, 구성빌딩) / 가맹문의: 1688-3098 | 사업자등록번호: 356-86-02171 / slow@slowcompany.co.kr",
+        "ft_icon": [
+            {
+                "ft_icon": "bi bi-facebook",
+                "ft_href": "",
+                "ft_txt": "facebook"
+            },
+            {
+                "ft_icon": "bi bi-instagram",
+                "ft_href": "",
+                "ft_txt": "instagram"
+            },
+            {
+                "ft_icon": "bi bi-youtube",
+                "ft_href": "",
+                "ft_txt": "youtube"
             }
         ]
     }

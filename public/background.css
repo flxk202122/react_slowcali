@@ -33,3 +33,16 @@
     background: url(./img/logo_blue.png)center center no-repeat;
     background-size: 100%;
 }
+
+
+
+/* footer h2 */
+
+#ft h2 a::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-top: 30%;
+    background: url(./img/logo_white.png) center center no-repeat;
+    background-size: 100%;
+}
