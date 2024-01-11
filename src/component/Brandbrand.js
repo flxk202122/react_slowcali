@@ -31,14 +31,14 @@ function Brandbrand(props) {
 
     return (
         <section id='brand_brand'>
-            <div className='container position-relative px-0'>
+            <div className='container-md position-relative px-0'>
                 <h2 className='visually-hidden'>브랜드</h2>
                 <div className='inner_box position-relative'>
-                    <ul className='brand_tab_list d-flex w-100'>
+                    <ul className='brand_tab_list d-md-flex w-100'>
                         {props.datasrc.brand.map((el, idx) => (
                             <li
                                 key={idx}
-                                className={`col-3 ${el.gnb_cls} ${showTab === idx ? "active" : ""}`}
+                                className={`col-md-3 ${el.gnb_cls} ${showTab === idx ? "active" : ""}`}
                                 onClick={() => tabClick(idx)}
                             >
                                 <div className='txt_box position-relative'>
