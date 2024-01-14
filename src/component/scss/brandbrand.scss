@@ -19,57 +19,61 @@
 }
 
 @media (max-width: 767.98px) {
-    img {
-        max-width: none !important;
-        height: 100vh;
-        width: 200vw;
-    }
 
-    .brand_tab_list {
+    #brand_brand {
+        img {
+            max-width: none !important;
+            height: 100vh;
+            width: 200vw;
+        }
+
+        .brand_tab_list {
 
 
-        li {
-            border-bottom: 1px solid #fff;
-            height: 25%;
-
-            .txt_box {
-                display: flex;
-                align-items: center;
-
-                h3 {
-                    font-size: 1.2rem;
-                }
-
-                p {
-                    font-size: 0.8rem;
-                }
-
-            }
-
-            &.active {
-
+            li {
+                border-bottom: 1px solid #fff;
+                height: 25%;
 
                 .txt_box {
-                    padding: 3rem;
+                    display: flex;
+                    align-items: center;
 
-                    p {}
+                    h3 {
+                        font-size: 1.2rem;
+                    }
 
-                    h3 {}
+                    p {
+                        font-size: 0.8rem;
+                    }
+
+                }
+
+                &.active {
+
+
+                    .txt_box {
+                        padding: 3rem;
+
+                        p {}
+
+                        h3 {}
+                    }
                 }
             }
+
         }
 
-    }
+        .brand_img_list {
+            overflow: hidden;
 
-    .brand_img_list {
-        overflow: hidden;
-
-        li.img_box {
+            li.img_box {
 
 
-            &.active {}
+                &.active {}
+            }
         }
     }
+
 
 }
 

@@ -32,6 +32,13 @@
 //header gnb
 #hd {
     #gnb {
+
+        .ul2d {
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.5s;
+        }
+
         >li {
             a {
                 box-sizing: border-box;
@@ -149,6 +156,7 @@
 
                 li {
                     a {
+
                         color: #2625A1;
                         transition: 0.3s;
 

@@ -1,5 +1,127 @@
 #menu {
 
+    padding: 2rem 0;
+
+
+    @media (max-width: 767.98px) {
+        .kal_box {
+            display: inline-block !important;
+        }
+
+        .box {
+            li {
+
+
+                a {}
+            }
+        }
+    }
+
+
+    @media(min-width: 767.98px) {
+
+        .kal_list {
+            .box {
+
+                >li {
+
+                    &:hover {
+                        background-color: #F5F5F7;
+
+                        .kal_box {
+                            display: block;
+                        }
+
+                        .menu_box {
+                            display: none;
+                        }
+
+                        a {
+                            background-color: #2625A1;
+                            color: #fff;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        color: #2625A1;
+        padding: 2rem;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .top_box {
+
+
+        img {
+
+            max-width: 100%;
+        }
+    }
+
+    .tab_list {
+        li {
+            padding-bottom: 3rem;
+
+            &+li {
+                margin-left: 1rem;
+
+            }
+
+            a {
+                font-weight: 400;
+                position: relative;
+
+                &:hover {
+                    color: #2625A1;
+
+                    &::before {
+                        display: inline-block;
+                        transition: 0.5s;
+                        opacity: 100;
+                    }
+
+                    &::after {
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    position: absolute;
+                    display: none;
+                    border-radius: 100%;
+                    top: -0.5rem;
+                    left: 50%;
+                    transform: translate(0, -50%);
+                    background-color: #2625A1;
+                    opacity: 0;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    display: inline-block;
+                    width: 0;
+                    left: 0;
+                    bottom: -0.5rem;
+                    height: 1px;
+                    background-color: #2625A1;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+    }
+
     .bg_box {
         overflow: hidden;
 
@@ -8,7 +130,7 @@
 
             display: none;
 
-            &:first-of-type {
+            &.active {
                 display: block;
             }
         }
@@ -70,23 +192,86 @@
     }
 
     .kal_list {
-        .box {
-            >li {
-                margin: 1rem;
+        text-align: center;
+
+        li.active {
+            display: block;
+
+            .box {
+                .menu_box {
+                    img {
+                        display: block !important;
+                    }
+                }
 
                 a {
-                    display: inline-block;
-                    width: 100%;
-                    background-color: #2625A1;
-                    color: #fff;
+                    display: block !important;
                 }
             }
-
-            margin: 1rem;
-
         }
 
-        text-align: center;
-        box-sizing: border-box;
+        &>li {
+            padding: 0 1rem;
+            display: none;
+        }
+
+        .box {
+            top: 0;
+
+            >li {
+                padding: 1rem;
+                margin: 1rem 0;
+                box-sizing: border-box;
+
+                &+li {
+                    margin-left: 1rem;
+                }
+
+                a {
+                    display: none !important;
+                    line-height: 2rem;
+                    width: 100%;
+                    background-color: #F5F5F7;
+                    color: #2625A1;
+                    left: 0;
+                    top: 100%;
+                    font-weight: 400;
+                }
+
+
+                .kal_box {
+                    display: none;
+
+                    transition: 0.5s;
+
+                    li {
+                        position: relative;
+                        line-height: 2rem;
+
+                        &::after {
+                            position: absolute;
+                            bottom: 0;
+                            content: '';
+                            left: 0;
+                            width: 100%;
+                            display: inline-block;
+                            border-bottom: 0.5px solid #2625A1;
+                        }
+
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+
+                .menu_box {
+                    img {
+                        display: none;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
