@@ -79,7 +79,7 @@ function Header(props) {
 													</ul>
 												}
 												{showTab === idx &&
-													<div className='bg_box position-absolute' style={{
+													<div className='bg_box position-absolute d-none d-md-block' style={{
 														backgroundImage: `url(./img/${el.gnb_bg})`,
 														backgroundRepeat: 'no-repeat',
 														backgroundSize: 'cover',

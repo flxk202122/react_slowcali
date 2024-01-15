@@ -1,6 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom'
 
+//스타일 컴포넌트 관리
+//menu_tab_btn
+import BtnLi from './stylecompinent/Mystlyecom';
+
+
 import './scss/menu.scss';
 
 function Menu(props) {
@@ -10,20 +15,21 @@ function Menu(props) {
 
 
 
-
 	return (
 		<section id='menu'>
 			<div className='container position-relative'>
 				<h2 className='visually-hidden'>{props.datasrc.h2}</h2>
 				<ul className='subject_list d-flex justify-content-center'>
-					{
-						props.datasrc.subject_list.map((el, idx) => {
-							return (
-								<li className='position-relative' key={idx} onClick={() => { setmenuTab(idx) }}><Link to=''>{el.nm}</Link></li >
-							)
-						})
-					}
-				</ul >
+					{props.datasrc.subject_list.map((el, idx) => (
+						<BtnLi
+							key={idx}
+						>
+							<Link to='' onClick={() => {
+								setmenuTab(idx);
+							}}>{el.nm}</Link>
+						</BtnLi>
+					))}
+				</ul>
 			</div >
 			<div className='bg_box'>
 				{
@@ -48,7 +54,6 @@ function Menu(props) {
 								)
 							})
 						}
-						<li></li>
 					</ul>
 				</div>
 				<div>
@@ -57,7 +62,9 @@ function Menu(props) {
 						{
 							props.datasrc.menu_list.map((el, idx) => {
 								return (
-									<li onClick={() => { setsubTab(idx) }}><Link to={el.href}>{el.nm}</Link></li>
+									<BtnLi key={idx}><Link to={el.href} onClick={() => {
+										setsubTab(idx);
+									}}>{el.nm}</Link></BtnLi>
 								)
 							})
 						}
