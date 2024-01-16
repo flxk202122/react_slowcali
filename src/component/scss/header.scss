@@ -4,6 +4,34 @@
 
             width: 100% !important;
 
+            //mobile tab 
+            li.down {
+                position: relative;
+
+                &.active {
+                    >a {
+                        &::after {
+                            font-family: 'bootstrap-icons';
+                            content: ' \F282';
+                        }
+                    }
+                }
+
+                >a {
+                    &::after {
+                        font-family: 'bootstrap-icons';
+                        content: ' \F286';
+                        font-size: 1rem;
+                        font-weight: 500;
+                        position: absolute;
+                        color: #2625A1;
+                        right: 0.5rem;
+                    }
+
+
+                }
+            }
+
             .ul2d {
                 position: relative !important;
                 left: 0 !important;

@@ -31,7 +31,7 @@ function Header(props) {
 			className={`position-relative ${!toggleBtn && handOn ? "active" : ""} ${toggleBtn ? "tabopen" : ""}`}>
 			<div className='container d-flex align-items-center justify-content-between'>
 				<h1><Link to="/"><span className='visually-hidden'>슬로우캘리 로고이미지</span></Link></h1>
-				<ul id="gnb" className='d-flex align-item-center justify-content-between'>
+				<ul id="gnb" className='d-flex align-items-center justify-content-between'>
 					{
 						props.datasrc.gnb.map((el, idx) => {
 							return (

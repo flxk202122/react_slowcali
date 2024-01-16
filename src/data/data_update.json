@@ -1,0 +1,599 @@
+{
+    "sectionhd": {
+        "gnb": [
+            {
+                "gnb_nm": "브랜드소개",
+                "gnb_href": "Brandstory",
+                "gnb_cls": "down",
+                "gnb_bg": "tab_brand.jpeg",
+                "ultwo": [
+                    {
+                        "gnb_nm": "우리의 시작",
+                        "gnb_href": ""
+                    },
+                    {
+                        "gnb_nm": "우리의 이야기",
+                        "gnb_href": ""
+                    }
+                ]
+            },
+            {
+                "gnb_nm": "메뉴소개",
+                "gnb_href": "menu",
+                "gnb_cls": "down",
+                "gnb_bg": "tab_menu.jpeg",
+                "ultwo": [
+                    {
+                        "gnb_nm": "포케",
+                        "gnb_href": ""
+                    },
+                    {
+                        "gnb_nm": "보울",
+                        "gnb_href": ""
+                    },
+                    {
+                        "gnb_nm": "그릴",
+                        "gnb_href": ""
+                    },
+                    {
+                        "gnb_nm": "사이드",
+                        "gnb_href": ""
+                    },
+                    {
+                        "gnb_nm": "칼로리",
+                        "gnb_href": ""
+                    }
+                ]
+            },
+            {
+                "gnb_nm": "매장",
+                "gnb_href": "",
+                "gnb_cls": "",
+                "gnb_bg": "tab_store.jpeg",
+                "ultwo": []
+            },
+            {
+                "gnb_nm": "성공전략",
+                "gnb_href": "",
+                "gnb_cls": "",
+                "gnb_bg": "tab_top.png",
+                "ultwo": []
+            },
+            {
+                "gnb_nm": "창업문의",
+                "gnb_href": "",
+                "gnb_cls": "",
+                "gnb_bg": "tab_come.jpeg",
+                "ultwo": []
+            }
+        ]
+    },
+    "sectionbrand": {
+        "about": [
+            {
+                "about_txt": "더 슬로우 컴퍼니는 많은 사람들에게 세계의 다양한 식문화를 소개하는 비전을 가지고 있습니다. ",
+                "about_cls": "",
+                "about_bg": "about_1.png",
+                "about_alt": "슬로우컴퍼니 브랜드 소개 이미지"
+            },
+            {
+                "about_txt": "슬로우캘리는 하와이안 포케 현지의 맛을 선보이고자 공들여 만든 저희의 첫 번째 브랜드입니다. ",
+                "about_cls": "",
+                "about_bg": "",
+                "about_alt": ""
+            },
+            {
+                "about_txt": "저희는 오랜 시간 하와이의 곳곳을 여행하며 다양한 포케를 접하고 조리법을 배워 하와이안 포케 현지의 맛을 한국인의 입맛에 맞게 연구하였습니다.",
+                "about_cls": "",
+                "about_bg": "",
+                "about_alt": ""
+            },
+            {
+                "about_txt": "하와이안 포케에 대한 꾸준한 열정으로 더욱 많은 사람들과 건강하고 맛있는 문화를 공유할 수 있도록 노력하겠습니다",
+                "about_cls": "",
+                "about_bg": "",
+                "about_alt": ""
+            }
+        ]
+    },
+    "sectionstory": {
+        "brand": [
+            {
+                "brand_nm": "NEW WAVE",
+                "brand_txt": "슬로우캘리는 스테디셀러 메뉴에만 안주하지 않고 트렌드에 맞춰 꾸준한 메뉴 개발로 새로운 라인업을 확장하고 있습니다. 하와이안 포케 본연의 아이덴티티를 잃지 않으면서 트렌드에 맞춰가는 것을 우리는 '뉴 웨이브'라고 부릅니다.",
+                "brand_cls": "",
+                "brand_bg": "story_wave.jpg"
+            },
+            {
+                "brand_nm": "REAL POKE",
+                "brand_txt": "우후죽순으로 생기는 하와이안 포케 브랜드 사이에서 슬로우캘리는 하와이 현지의 맛을 재현하며 한국인의 입맛에 맞는 독자적인 소스를 개발하는데 집중하였습니다. 신선한 재료와 특색있는 소스로 만들어 균형잡힌 완벽한 한 그릇은 오직 슬로우캘리에서만 맛볼 수 있습니다.",
+                "brand_cls": "",
+                "brand_bg": "story_poke.jpg"
+            },
+            {
+                "brand_nm": "DISTRIBUTION",
+                "brand_txt": "전국 통합 물류 계약을 통해 슬로우캘리 모든 매장에 당일 공수한 최상급 재료를 주 6일 공급하여 신선도에 민감한 식자재의 재고 부담은 제거하고 단가를 낮췄습니다.",
+                "brand_cls": "",
+                "brand_bg": "story_del.png"
+            },
+            {
+                "brand_nm": "REAL FRESH",
+                "brand_txt": "하와이안 포케의 맛을 결정하는 가장 기본적인 요소는 재료의 신선함입니다. 재료의 신선함을 지키는 것의 중요함은 누구나 다 알고 있는 사실이지만 모두가 지키지는 못합니다. 그 이유는 각 재료마다 신선도를 지키기 위한 온도와 보관 방법이 다르기 때문에 기본적으로 메뉴에 사용할 재료의 이해도가 우선되기 때문이지요. 슬로우캘리는 다양한 재료의 특성에 맞는 배송과 보관 방법으로 신선함을 엄격히 유지합니다.",
+                "brand_cls": "",
+                "brand_bg": "story_fresh.jpeg"
+            }
+        ]
+    },
+    "sectionmenu": {
+        "h2": "슬로우캘리 전체 메뉴 리스트",
+        "subject_list": [
+            {
+                "nm": "포케",
+                "href": "",
+                "bg": "main_visual_poke.jpg",
+                "topping_list": [
+                    {
+                        "nm": "참치추가",
+                        "href": "",
+                        "bg": "main_poke_t_1.jpg"
+                    },
+                    {
+                        "nm": "연어추가",
+                        "href": "",
+                        "bg": "main_poke_t_2.jpg"
+                    },
+                    {
+                        "nm": "문어",
+                        "href": "",
+                        "bg": "main_poke_t_3.jpg"
+                    },
+                    {
+                        "nm": "두부",
+                        "href": "",
+                        "bg": "main_poke_t_4.jpg"
+                    },
+                    {
+                        "nm": "구운버섯",
+                        "href": "",
+                        "bg": "main_poke_t_5.jpg"
+                    },
+                    {
+                        "nm": "닭가슴살",
+                        "href": "",
+                        "bg": "main_poke_t_6.jpg"
+                    },
+                    {
+                        "nm": "아보카도",
+                        "href": "",
+                        "bg": "main_poke_t_7.jpg"
+                    },
+                    {
+                        "nm": "해초볶음",
+                        "href": "",
+                        "bg": "main_poke_t_8.jpg"
+                    },
+                    {
+                        "nm": "삶은계린",
+                        "href": "",
+                        "bg": "main_poke_t_9.jpg"
+                    },
+                    {
+                        "nm": "샐러드믹스",
+                        "href": "",
+                        "bg": "main_poke_t_10.jpg"
+                    },
+                    {
+                        "nm": "메밀면",
+                        "href": "",
+                        "bg": "main_poke_t_11.jpg"
+                    },
+                    {
+                        "nm": "현미밥",
+                        "href": "",
+                        "bg": "main_poke_t_12.jpg"
+                    }
+                ],
+                "menu_list": [
+                    {
+                        "nm": "TUNA POKE",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "클래식 참치 포케",
+                                "menu_bg": "main_poke_1.jpg",
+                                "menu_all": "365",
+                                "menu_kcal": "506.7",
+                                "menu_tan": "69.9",
+                                "menu_dan": "32",
+                                "menu_zi": "11",
+                                "menu_na": "530.6",
+                                "menu_dang": "9.1"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "솔트앤페퍼 참치 포케",
+                                "menu_bg": "main_poke_2.jpg",
+                                "menu_all": "360",
+                                "menu_kcal": "548.5",
+                                "menu_tan": "68.7",
+                                "menu_dan": "31.8",
+                                "menu_zi": "16.3",
+                                "menu_na": "464.6",
+                                "menu_dang": "10.2"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "스파이시 참치 포케",
+                                "menu_bg": "main_poke_3.jpg",
+                                "menu_all": "375",
+                                "menu_kcal": "553.5",
+                                "menu_tan": "76.1",
+                                "menu_dan": "33.2",
+                                "menu_zi": "12.9",
+                                "menu_na": "457.6",
+                                "menu_dang": "10.4"
+                            }
+                        ]
+                    },
+                    {
+                        "nm": "SALMON POKE",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "클래식 연어 포케",
+                                "menu_bg": "main_poke_4.jpg",
+                                "menu_all": "365",
+                                "menu_kcal": "672",
+                                "menu_tan": "70.2",
+                                "menu_dan": "27.5",
+                                "menu_zi": "31.2",
+                                "menu_na": "522.2",
+                                "menu_dang": "11.1"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "와사비렌치 연어 포케",
+                                "menu_bg": "main_poke_5.jpg",
+                                "menu_all": "425",
+                                "menu_kcal": "792.2",
+                                "menu_tan": "88.7",
+                                "menu_dan": "21.1",
+                                "menu_zi": "32.2",
+                                "menu_na": "369.1",
+                                "menu_dang": "8"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "스파이시 연어 포케",
+                                "menu_bg": "main_poke_6.jpg",
+                                "menu_all": "375",
+                                "menu_kcal": "687.1",
+                                "menu_tan": "75.1",
+                                "menu_dan": "27.2",
+                                "menu_zi": "30.9",
+                                "menu_na": "408.7",
+                                "menu_dang": "10.2"
+                            }
+                        ]
+                    },
+                    {
+                        "nm": "POKE & VEGAN POKE",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "라임폰즈 문어 포케",
+                                "menu_bg": "main_poke_7.jpg",
+                                "menu_all": "345",
+                                "menu_kcal": "500.4",
+                                "menu_tan": "69.5",
+                                "menu_dan": "28.6",
+                                "menu_zi": "12",
+                                "menu_na": "657.9",
+                                "menu_dang": "11.6"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "오리엔탈 두부 포케",
+                                "menu_bg": "main_poke_8.jpg",
+                                "menu_all": "390",
+                                "menu_kcal": "542.6",
+                                "menu_tan": "80.7",
+                                "menu_dan": "16.7",
+                                "menu_zi": "17",
+                                "menu_na": "483.6",
+                                "menu_dang": "10.4"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "트러플 버섯 포케",
+                                "menu_bg": "main_poke_9.jpg",
+                                "menu_all": "435",
+                                "menu_kcal": "631.6",
+                                "menu_tan": "134.9",
+                                "menu_dan": "11.7",
+                                "menu_zi": "5",
+                                "menu_na": "540",
+                                "menu_dang": "14.3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nm": "보울",
+                "href": "",
+                "bg": "main_visual_bowl.jpg",
+                "topping_list": [
+                    {
+                        "nm": "문어",
+                        "href": "",
+                        "bg": "main_poke_t_3.jpg"
+                    },
+                    {
+                        "nm": "두부",
+                        "href": "",
+                        "bg": "main_poke_t_4.jpg"
+                    },
+                    {
+                        "nm": "구운버섯",
+                        "href": "",
+                        "bg": "main_poke_t_5.jpg"
+                    },
+                    {
+                        "nm": "닭가슴살",
+                        "href": "",
+                        "bg": "main_poke_t_6.jpg"
+                    },
+                    {
+                        "nm": "아보카도",
+                        "href": "",
+                        "bg": "main_poke_t_7.jpg"
+                    },
+                    {
+                        "nm": "해초볶음",
+                        "href": "",
+                        "bg": "main_poke_t_8.jpg"
+                    },
+                    {
+                        "nm": "삶은계린",
+                        "href": "",
+                        "bg": "main_poke_t_9.jpg"
+                    },
+                    {
+                        "nm": "샐러드믹스",
+                        "href": "",
+                        "bg": "main_poke_t_10.jpg"
+                    },
+                    {
+                        "nm": "메밀면",
+                        "href": "",
+                        "bg": "main_poke_t_11.jpg"
+                    },
+                    {
+                        "nm": "현미밥",
+                        "href": "",
+                        "bg": "main_poke_t_12.jpg"
+                    }
+                ],
+                "menu_list": [
+                    {
+                        "nm": "BOWL",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "블랙페퍼 치킨 보울",
+                                "menu_bg": "main_bowl_1.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "665.1",
+                                "menu_tan": "48.3",
+                                "menu_dan": "26.7",
+                                "menu_zi": "16.4",
+                                "menu_na": "1057.8",
+                                "menu_dang": "16.7"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "부채살 스테이크 보울",
+                                "menu_bg": "main_bowl_2.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "617.1",
+                                "menu_tan": "78.1",
+                                "menu_dan": "39.2",
+                                "menu_zi": "18.4",
+                                "menu_na": "357.5",
+                                "menu_dang": "6.2"
+                            }
+                        ]
+                    },
+                    {},
+                    {}
+                ]
+            },
+            {
+                "nm": "그릴",
+                "href": "",
+                "bg": "main_visual_gril.jpg",
+                "topping_list": [
+                    {
+                        "nm": "문어",
+                        "href": "",
+                        "bg": "main_poke_t_3.jpg"
+                    },
+                    {
+                        "nm": "두부",
+                        "href": "",
+                        "bg": "main_poke_t_4.jpg"
+                    },
+                    {
+                        "nm": "구운버섯",
+                        "href": "",
+                        "bg": "main_poke_t_5.jpg"
+                    },
+                    {
+                        "nm": "닭가슴살",
+                        "href": "",
+                        "bg": "main_poke_t_6.jpg"
+                    },
+                    {
+                        "nm": "아보카도",
+                        "href": "",
+                        "bg": "main_poke_t_7.jpg"
+                    },
+                    {
+                        "nm": "해초볶음",
+                        "href": "",
+                        "bg": "main_poke_t_8.jpg"
+                    },
+                    {
+                        "nm": "삶은계린",
+                        "href": "",
+                        "bg": "main_poke_t_9.jpg"
+                    },
+                    {
+                        "nm": "샐러드믹스",
+                        "href": "",
+                        "bg": "main_poke_t_10.jpg"
+                    },
+                    {
+                        "nm": "메밀면",
+                        "href": "",
+                        "bg": "main_poke_t_11.jpg"
+                    },
+                    {
+                        "nm": "현미밥",
+                        "href": "",
+                        "bg": "main_poke_t_12.jpg"
+                    }
+                ],
+                "menu_list": [
+                    {
+                        "nm": "GRIL",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "하와이안 갈릭 쉬림프",
+                                "menu_bg": "main_gril_1.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "665.1",
+                                "menu_tan": "48.3",
+                                "menu_dan": "26.7",
+                                "menu_zi": "16.4",
+                                "menu_na": "1057.8",
+                                "menu_dang": "16.7"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "프리미엄 연어 스테이크",
+                                "menu_bg": "main_gril_2.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "617.1",
+                                "menu_tan": "78.1",
+                                "menu_dan": "39.2",
+                                "menu_zi": "18.4",
+                                "menu_na": "357.5",
+                                "menu_dang": "6.2"
+                            }
+                        ]
+                    },
+                    {},
+                    {}
+                ]
+            },
+            {
+                "nm": "사이드",
+                "href": "",
+                "bg": "main_visual_side.jpg",
+                "topping_list": [],
+                "menu_list": [
+                    {
+                        "nm": "SOUP",
+                        "href": "",
+                        "menu_content": [
+                            {
+                                "href": "",
+                                "menu_nm": "",
+                                "menu_bg": "main_gril_1.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "665.1",
+                                "menu_tan": "48.3",
+                                "menu_dan": "26.7",
+                                "menu_zi": "16.4",
+                                "menu_na": "1057.8",
+                                "menu_dang": "16.7"
+                            },
+                            {
+                                "href": "",
+                                "menu_nm": "프리미엄 연어 스테이크",
+                                "menu_bg": "main_gril_2.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "617.1",
+                                "menu_tan": "78.1",
+                                "menu_dan": "39.2",
+                                "menu_zi": "18.4",
+                                "menu_na": "357.5",
+                                "menu_dang": "6.2"
+                            }
+                            {
+                                "href": "",
+                                "menu_nm": "프리미엄 연어 스테이크",
+                                "menu_bg": "main_gril_2.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "617.1",
+                                "menu_tan": "78.1",
+                                "menu_dan": "39.2",
+                                "menu_zi": "18.4",
+                                "menu_na": "357.5",
+                                "menu_dang": "6.2"
+                            }
+                            {
+                                "href": "",
+                                "menu_nm": "프리미엄 연어 스테이크",
+                                "menu_bg": "main_gril_2.jpg",
+                                "menu_all": "450",
+                                "menu_kcal": "617.1",
+                                "menu_tan": "78.1",
+                                "menu_dan": "39.2",
+                                "menu_zi": "18.4",
+                                "menu_na": "357.5",
+                                "menu_dang": "6.2"
+                            }
+                        ]
+                    },
+                    {},
+                    {}
+                ]
+            },
+            {
+                "nm": "칼로리",
+                "href": "",
+                "bg": "main_visual_kal.jpg",
+                "topping_list": []
+            }
+        ]
+    },
+    "sectionft": {
+        "ft_txt": "주식회사 더슬로우 컴퍼니 | 대표:전현제 | /개인정보관리책임자:전현제 5층 (동교동, 구성빌딩) / 가맹문의: 1688-3098 | 사업자등록번호: 356-86-02171 / slow@slowcompany.co.kr",
+        "ft_icon": [
+            {
+                "ft_icon": "bi bi-facebook",
+                "ft_href": "",
+                "ft_txt": "facebook"
+            },
+            {
+                "ft_icon": "bi bi-instagram",
+                "ft_href": "",
+                "ft_txt": "instagram"
+            },
+            {
+                "ft_icon": "bi bi-youtube",
+                "ft_href": "",
+                "ft_txt": "youtube"
+            }
+        ]
+    }
+}

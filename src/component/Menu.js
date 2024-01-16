@@ -38,7 +38,6 @@ function Menu(props) {
 							<img key={idx} src={`./img/menu/${el.bg}`} className={`${menuTab === idx ? "active" : ""}`} alt="" />
 						)
 					})
-
 				}
 			</div>
 			<div className='container position-relative'>
@@ -48,8 +47,8 @@ function Menu(props) {
 						{
 							props.datasrc.topping_list.map((el, idx) => {
 								return (
-									<li key={idx}><Link to=''>{el.nm}</Link>
-										<img src={`./img/menu/${el.bg}`} alt="" />
+									<li className='row text-center' key={idx}><Link className='order-1' to=''>{el.nm}</Link>
+										<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
 									</li>
 								)
 							})
