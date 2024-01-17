@@ -56,6 +56,16 @@
     }
 
     .top_box {
+        ul {
+            li {
+                &:not(.only) {}
+
+                a {
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                }
+            }
+        }
 
 
         img {

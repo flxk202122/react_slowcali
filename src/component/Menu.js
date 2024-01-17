@@ -43,16 +43,28 @@ function Menu(props) {
 			<div className='container position-relative'>
 				<div className='top_box'>
 					<h3>Topping</h3>
-					<ul className='d-flex'>
+					<ul className='d-flex align-items-center col'>
 						{
-							props.datasrc.topping_list.map((el, idx) => {
+							props.datasrc.topping_list
+								.filter((el) => el.href === "only")
+								.map((el, idx) => {
+									return (
+										<li className={`row text-center col-2 ${el.href}`} key={idx}><Link className='order-1' to=''>{el.nm}</Link>
+											<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
+										</li>
+									)
+								}
+								)}
+						{props.datasrc.topping_list
+							.filter((el) => el.href === "")
+							.map((el, idx) => {
 								return (
-									<li className='row text-center' key={idx}><Link className='order-1' to=''>{el.nm}</Link>
+									<li className={`row text-center ${el.href}`} key={idx}><Link className='order-1' to=''>{el.nm}</Link>
 										<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
 									</li>
 								)
-							})
-						}
+							}
+							)}
 					</ul>
 				</div>
 				<div>

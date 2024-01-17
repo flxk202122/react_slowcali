@@ -156,12 +156,12 @@
         "topping_list": [
             {
                 "nm": "참치추가",
-                "href": "",
+                "href": "only",
                 "bg": "main_poke_t_1.jpg"
             },
             {
                 "nm": "연어추가",
-                "href": "",
+                "href": "only",
                 "bg": "main_poke_t_2.jpg"
             },
             {
