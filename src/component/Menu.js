@@ -15,6 +15,7 @@ function Menu(props) {
 
 
 
+
 	return (
 		<section id='menu'>
 			<div className='container position-relative'>
@@ -45,50 +46,76 @@ function Menu(props) {
 					<h3>Topping</h3>
 					<ul className='d-flex align-items-center col'>
 						{
-							props.datasrc.topping_list
-								.filter((el) => el.href === "only")
-								.map((el, idx) => {
-									return (
-										<li className={`row text-center col-2 ${el.href}`} key={idx}><Link className='order-1' to=''>{el.nm}</Link>
-											<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
-										</li>
-									)
-								}
-								)}
-						{props.datasrc.topping_list
-							.filter((el) => el.href === "")
-							.map((el, idx) => {
-								return (
-									<li className={`row text-center ${el.href}`} key={idx}><Link className='order-1' to=''>{el.nm}</Link>
-										<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
-									</li>
-								)
-							}
-							)}
+							props.datasrc.subject_list.map((el, idx) => (
+								<React.Fragment key={idx}>
+									{menuTab === idx &&
+										el.topping_list
+											.filter((eel) => eel.href === "only")
+											.map((el, subIdx) => (
+												<li className={`row text-center col-2 ${el.href}`} key={subIdx}>
+													<Link className='order-1' to=''>{el.nm}</Link>
+													<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
+												</li>
+											))
+									}
+								</React.Fragment>
+
+							))
+						}
+
+						{
+							props.datasrc.subject_list.map((el, idx) => (
+								<React.Fragment key={idx}>
+									{menuTab === idx &&
+										el.topping_list
+											.filter((eel) => eel.href === "")
+											.map((eel, iidx) => (
+												<li className={`row text-center ${eel.href}`} key={iidx}><Link className='order-1' to=''>{eel.nm}</Link>
+													<img className='order-0' src={`./img/menu/${eel.bg}`} alt="" />
+												</li>
+											))
+									}
+								</React.Fragment>
+							))
+						}
+
 					</ul>
 				</div>
 				<div>
 					<h3 className=''>MENU</h3>
 					<ul className='tab_list d-flex justify-content-center'>
 						{
-							props.datasrc.menu_list.map((el, idx) => {
-								return (
-									<BtnLi key={idx}><Link to={el.href} onClick={() => {
-										setsubTab(idx);
-									}}>{el.nm}</Link></BtnLi>
-								)
-							})
+							props.datasrc.subject_list.map((el, idx) => (
+								<React.Fragment key={idx}>
+									{menuTab === idx &&
+										el.menu_list
+											.map((eel, iidx) => (
+												<BtnLi key={iidx}><Link to={eel.href} onClick={() => {
+													setsubTab(iidx);
+												}}>{eel.nm}</Link></BtnLi>
+											))
+									}
+								</React.Fragment>
+							))
 						}
 					</ul>
+
 					<ul className='kal_list'>
+
+					</ul>
+
+					{/* <ul className='kal_list'>
 						{
-							props.datasrc.menu_list.map((el, idx) => {
+							props.datasrc.subject_list.map((el, idx) => {
 								return (
 									<li key={idx} className={`${subTab === idx ? "active" : ""}`} >
 										<ul className='box d-md-flex justify-content-center'>
-											{
-												el.menu_content.map((eel, iidx) => {
-													return (
+											<React.Fragment key={idx}>
+												{
+													menuTab === idx &&
+													el.menu_listt.map((eel, iidx) => (
+
+
 														<li key={iidx} className='position-relative row col-md-4 '>
 															<Link className='col-12 d-flex justify-content-center align-items-center'>{eel.menu_nm}</Link>
 															<div className='menu_box col-6 col-md-12 align-items-center'>
@@ -125,15 +152,18 @@ function Menu(props) {
 																</li>
 															</ul>
 														</li>
+
+
 													)
-												})
-											}
+													)
+												}
+											</React.Fragment>
 										</ul>
 									</li>
 								)
 							})
 						}
-					</ul>
+					</ul> */}
 				</div>
 			</div >
 		</section >
