@@ -13,6 +13,10 @@ function Menu(props) {
 	const [menuTab, setmenuTab] = useState(0);
 	const [subTab, setsubTab] = useState(0);
 
+	useEffect(() => {
+
+		setsubTab(0);
+	}, [menuTab]);
 
 
 
@@ -82,7 +86,15 @@ function Menu(props) {
 					</ul>
 				</div>
 				<div>
-					<h3 className=''>MENU</h3>
+					<h3 className=''>
+						menu
+						{/* {
+							props.datasrc.subject_list &&
+							props.datasrc.subject_list
+								.fiter(el => el.nm !== "칼로리").map()
+
+						} */}
+					</h3>
 					<ul className='tab_list d-flex justify-content-center'>
 						{
 							props.datasrc.subject_list.map((el, idx) => (
@@ -101,69 +113,69 @@ function Menu(props) {
 					</ul>
 
 					<ul className='kal_list'>
+						{
+							props.datasrc.subject_list.map((l, id) => (
+								menuTab === id &&
+								props.datasrc.subject_list[id].menu_list.map((el, idx) => {
+									return (
+										<li key={idx} className={`${subTab === idx ? "active" : ""}`} >
+											<ul className='box d-md-flex justify-content-center'>
+												{
+													el.menu_content.map((eel, iidx) => {
+														return (
+															<li key={iidx} className='position-relative row col-md-4 '>
+																<Link className='col-12 d-flex justify-content-center align-items-center'>{eel.menu_nm}</Link>
+																<div className='menu_box col-6 col-md-12 align-items-center'>
+																	<img className='w-100' src={`./img/menu/${eel.menu_bg}`} alt="" />
+																</div>
+																<ul className='kal_box col-6 col-md-12'>
+																	<li className='d-flex justify-content-between'>
+																		<span>총g</span>
+																		<span>{eel.menu_all}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>열량&#40;Kcal&#41;</span>
+																		<span>{eel.menu_kcal}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>탄수화물&#40;g&#41;</span>
+																		<span>{eel.menu_tan}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>단백질&#40;g&#41;</span>
+																		<span>{eel.menu_dan}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>지방&#40;g&#41;</span>
+																		<span>{eel.menu_zi}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>나트륨&#40;g&#41;</span>
+																		<span>{eel.menu_na}</span>
+																	</li>
+																	<li className='d-flex justify-content-between'>
+																		<span>당&#40;g&#41;</span>
+																		<span>{eel.menu_dang}</span>
+																	</li>
+																</ul>
+															</li>
+														)
+													})
+												}
+											</ul>
+										</li>
+									)
+								})
 
+
+							))
+
+						}
 					</ul>
 
-					{/* <ul className='kal_list'>
-						{
-							props.datasrc.subject_list.map((el, idx) => {
-								return (
-									<li key={idx} className={`${subTab === idx ? "active" : ""}`} >
-										<ul className='box d-md-flex justify-content-center'>
-											<React.Fragment key={idx}>
-												{
-													menuTab === idx &&
-													el.menu_listt.map((eel, iidx) => (
+					<ul className='kal_tab'>
 
-
-														<li key={iidx} className='position-relative row col-md-4 '>
-															<Link className='col-12 d-flex justify-content-center align-items-center'>{eel.menu_nm}</Link>
-															<div className='menu_box col-6 col-md-12 align-items-center'>
-																<img className='w-100' src={`./img/menu/${eel.menu_bg}`} alt="" />
-															</div>
-															<ul className='kal_box col-6 col-md-12'>
-																<li className='d-flex justify-content-between'>
-																	<span>총g</span>
-																	<span>{eel.menu_all}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>열량&#40;Kcal&#41;</span>
-																	<span>{eel.menu_kcal}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>탄수화물&#40;g&#41;</span>
-																	<span>{eel.menu_tan}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>단백질&#40;g&#41;</span>
-																	<span>{eel.menu_dan}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>지방&#40;g&#41;</span>
-																	<span>{eel.menu_zi}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>나트륨&#40;g&#41;</span>
-																	<span>{eel.menu_na}</span>
-																</li>
-																<li className='d-flex justify-content-between'>
-																	<span>당&#40;g&#41;</span>
-																	<span>{eel.menu_dang}</span>
-																</li>
-															</ul>
-														</li>
-
-
-													)
-													)
-												}
-											</React.Fragment>
-										</ul>
-									</li>
-								)
-							})
-						}
-					</ul> */}
+					</ul>
 				</div>
 			</div >
 		</section >

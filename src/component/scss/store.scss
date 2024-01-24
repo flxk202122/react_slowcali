@@ -1,0 +1,44 @@
+.section_store {
+    .ani_box {
+        padding: 2rem 0;
+
+
+        .ani_h {
+            // animation: bigsmall 15s;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2625A1;
+
+            &::after {
+                animation: animate 3s;
+                animation-iteration-count: infinite;
+                content: '120호점 돌파';
+                left: 0;
+                position: absolute;
+                white-space: nowrap;
+            }
+        }
+
+        .ani_p {
+            color: #2625A1;
+            font-weight: 300;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
