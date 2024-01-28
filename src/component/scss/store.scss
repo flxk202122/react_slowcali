@@ -38,8 +38,9 @@
     .np_box {}
 
     .store_search {
-        border: 1px solid #626263;
         height: 50vw;
+        box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem 1rem 0 0;
 
 
         .search_title {
@@ -138,21 +139,26 @@
         height: 100%;
     }
 
-    .gg {
+    .location_wrapper {
         width: calc(100% - 4rem);
-        padding: 2rem 1rem;
-        box-sizing: border-box;
         overflow: hidden;
 
-        li {
-            margin: 0 1rem;
-        }
+        .location_list {
+            width: 100%;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
 
-        a {
-            white-space: nowrap;
-        }
+            li {
+                margin: 0 1rem;
+            }
 
+            a {
+                white-space: nowrap;
+            }
+
+        }
     }
+
 
     //lopf slide
     .store_loof {
@@ -180,6 +186,42 @@
         font-weight: 600;
         font-size: 1.2rem;
     }
+
+
+    #__react-kakao-maps-sdk___Map {
+
+
+
+        div {
+
+            border-color: transparent !important;
+            width: 150px;
+            border-radius: 10px;
+            text-align: center !important;
+            box-sizing: border-box;
+
+            div.pin {
+                position: relative;
+                border: 2px solid #2625A1 !important;
+                border-radius: 10px;
+                padding: 2.5px;
+                padding: 10px;
+                color: #2625A1;
+                font-weight: 500;
+                font-size: 0.8rem;
+
+                span {
+                    font-size: 1rem;
+                    color: #2625A1;
+                    font-weight: 500;
+                }
+            }
+        }
+
+
+
+    }
+
 
 }
 
