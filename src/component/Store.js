@@ -8,31 +8,41 @@ import './scss/store.scss';
 
 export default function KakaoMap(props) {
 
-  const [slideState, setSlideState] = useState(0);
+  // const [slideState, setSlideState] = useState(0);
   const [picMarker, setMarker] = useState(0);
+  const [bigLocation, setLocation] = useState(0);
+
   const slide_length = props.datasrc.store_list.map.length;
-  const slideRef = useRef();
+  const slideRef = useRef(null);
 
-  const handleBannerRight = () => {
-    if (slideState >= slide_length) {
-      setSlideState(0)
-    } else {
-      setSlideState(slideState + 1);
-    }
-  }
 
-  const handleBannerLeft = () => {
-    if (slideState === 0) {
-      setSlideState(slide_length);
-    } else {
-      setSlideState(slideState - 1);
-    }
-  }
+  // const prevPage = () =>
+  //   setSlideState((prev) =>
+  //     prev > 0
+  //       ? (slideRef.current?.scroll({
+  //         left: 400 * (prev - 1),
+  //         behavior: "smooth",
+  //       }),
+  //         prev - 1)
+  //       : prev
+  //   );
 
+  // const nextPage = () =>
+  //   setSlideState((prev) =>
+  //     prev < slide_length
+  //       ? (slideRef.current?.scroll({
+  //         left: 400 * (prev + 1),
+  //         behavior: "smooth",
+  //       }),
+  //         prev + 1)
+  //       : prev
+  //   );
+
+
+  //지도 지역별로 이동
   useEffect(() => {
-    slideRef.current.style.transition = "all 0.5s ease-in-out";
-    slideRef.current.style.transform = `translateX(-${slideState})`;
-  }, [slideState])
+    setMarker(0);
+  }, [bigLocation])
 
 
   return (
@@ -78,12 +88,13 @@ export default function KakaoMap(props) {
       <div className="container">
         <h2 className="col-12">{props.datasrc.h2}</h2>
         <div className="d-lg-flex justify-content-between">
-          <Map Map className="col-5" center={{ lat: props.datasrc.store_list[0].store[0].latitude, lng: props.datasrc.store_list[0].store[0].longitude }} level={3}>
+          <Map Map className="col-5" center={{ lat: props.datasrc.store_list[bigLocation].store[picMarker].latitude, lng: props.datasrc.store_list[bigLocation].store[picMarker].longitude }} level={3}>
             {props.datasrc.store_list.map((el, idx) => (
+              bigLocation === idx &&
               el.store.map((eel, iidx) => (
                 <MapMarker key={iidx} position={{ lat: parseFloat(eel.latitude), lng: parseFloat(eel.longitude) }}>
                   <div className="pin">
-                    슬로우캘리
+                    {`[${el.map}]${eel.nm}점`}
                   </div>
                 </MapMarker>
               ))
@@ -101,33 +112,35 @@ export default function KakaoMap(props) {
               </div>
             </div>
             <div className="np_btn d-flex justify-content-between position-relative align-items-center">
-              <button className="prev" onClick={handleBannerLeft}><span className="visually-hidden">앞으로가기</span></button>
+              <button className="prev"><span className="visually-hidden">앞으로가기</span></button>
               <div className="location_wrapper">
-                <ul className="location_list d-flex" ref={slideRef}>
+                <ul className="location_list d-flex">
                   {
                     props.datasrc.store_list.map((el, idx) => {
-
                       return (
 
-                        <li key={idx} > <Link>{el.map}</Link></li>
+                        <li key={idx} onClick={() => {
+                          setLocation(idx)
+                        }} ref={slideRef}> <Link className={`${bigLocation === idx ? "active" : ""}`}>{el.map}</Link></li>
 
                       )
                     })
                   }
                 </ul>
               </div>
-              <button className="next" onClick={handleBannerRight}><span className="visually-hidden">뒤로가기</span></button>
+              <button className="next"><span className="visually-hidden">뒤로가기</span></button>
             </div>
             <div className="wrapper position-relative overflow-auto">
               <div className="np_box">
                 {
                   props.datasrc.store_list.map((el, idx) => (
+                    bigLocation === idx &&
                     props.datasrc.store_list[idx].store.map((eel, iidx) => {
                       return (
                         <div key={iidx} className="border-bottom p-2">
-                          <Link className="d-flex align-items-center">
+                          <Link className="d-flex align-items-center" onClick={() => { setMarker(iidx) }}>
                             <span className="img_box col-4 d-flex align-items-center"><img src="./img/logo_blue.png" alt="슬로우캘리 이미지" /></span>
-                            <div className="col-8 px-2" onClick={() => { setMarker(idx) }}>
+                            <div className="col-8 px-2">
                               <span className="store_nm">{`[${el.map}]${eel.nm}점`}</span>
                               <ul>
                                 <li>

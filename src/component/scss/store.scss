@@ -150,10 +150,15 @@
 
             li {
                 margin: 0 1rem;
-            }
 
-            a {
-                white-space: nowrap;
+                a {
+                    white-space: nowrap;
+
+                    &.active {
+                        color: #2F2EA5 !important;
+                        font-weight: 500;
+                    }
+                }
             }
 
         }
@@ -208,7 +213,8 @@
                 padding: 10px;
                 color: #2625A1;
                 font-weight: 500;
-                font-size: 0.8rem;
+                font-size: 0.6rem;
+
 
                 span {
                     font-size: 1rem;
