@@ -1,6 +1,8 @@
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 import { Link } from 'react-router-dom';
 import { useRef, useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, navigation } from 'swiper/modules';
 
 import './scss/store.scss';
 
@@ -12,9 +14,20 @@ export default function KakaoMap(props) {
   const [picMarker, setMarker] = useState(0);
   const [bigLocation, setLocation] = useState(0);
 
-  const slide_length = props.datasrc.store_list.map.length;
   const slideRef = useRef(null);
 
+
+  const goNext = () => {
+    if (slideRef.current && slideRef.current.swiper) {
+      slideRef.current.swiper.slideNext();
+    }
+  };
+
+  const goPrev = () => {
+    if (slideRef.current && slideRef.current.swiper) {
+      slideRef.current.swiper.slidePrev();
+    }
+  };
 
   // const prevPage = () =>
   //   setSlideState((prev) =>
@@ -46,6 +59,7 @@ export default function KakaoMap(props) {
 
 
   return (
+
     <section className="section_store position-relative overflow-hidden">
       <div className="ani_box position-relative text-center">
         <span className="ani_h position-relative">{
@@ -112,8 +126,32 @@ export default function KakaoMap(props) {
               </div>
             </div>
             <div className="np_btn d-flex justify-content-between position-relative align-items-center">
-              <button className="prev"><span className="visually-hidden">앞으로가기</span></button>
-              <div className="location_wrapper">
+              <button className="prev" onClick={goPrev}><span className="visually-hidden">앞으로가기</span></button>
+              <Swiper className="myswiper align-items-center"
+                modules={[Navigation]}
+                slidesPerView={12}
+                spaceBetween={0}
+                loop={true}
+                navigation={{
+                  nextEl: '.next',
+                  prevEl: '.prev',
+                  clickable: true
+                }}>
+                {
+                  props.datasrc.store_list.map((el, idx) => {
+                    return (
+                      <SwiperSlide className="myswiperlist" key={idx} onClick={() => {
+                        setLocation(idx)
+
+                      }}
+
+                        ref={slideRef}> <Link className={`${bigLocation === idx ? "active" : ""}`}>{el.map}</Link></SwiperSlide>
+
+                    )
+                  })
+                }
+              </Swiper>
+              {/* <div className="location_wrapper">
                 <ul className="location_list d-flex">
                   {
                     props.datasrc.store_list.map((el, idx) => {
@@ -127,8 +165,8 @@ export default function KakaoMap(props) {
                     })
                   }
                 </ul>
-              </div>
-              <button className="next"><span className="visually-hidden">뒤로가기</span></button>
+              </div> */}
+              <button className="next" onClick={goNext}><span className="visually-hidden">뒤로가기</span></button>
             </div>
             <div className="wrapper position-relative overflow-auto">
               <div className="np_box">

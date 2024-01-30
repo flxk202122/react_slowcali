@@ -86,8 +86,6 @@
 
             .prev,
             .next {
-                border: 2px solid #626263;
-                border-radius: 100%;
                 width: 2rem;
                 height: 2rem;
             }
@@ -139,27 +137,25 @@
         height: 100%;
     }
 
-    .location_wrapper {
+    .myswiper {
         width: calc(100% - 4rem);
         overflow: hidden;
 
-        .location_list {
-            width: 100%;
-            padding: 2rem 1rem;
-            box-sizing: border-box;
+        .myswiperlist {
 
-            li {
-                margin: 0 1rem;
+            padding: 1rem 1rem;
+            margin: 0 1rem;
 
-                a {
-                    white-space: nowrap;
+            a {
+                white-space: nowrap;
 
-                    &.active {
-                        color: #2F2EA5 !important;
-                        font-weight: 500;
-                    }
+                &.active {
+                    color: #2F2EA5 !important;
+                    font-weight: 500;
+
                 }
             }
+
 
         }
     }
