@@ -35,13 +35,10 @@
         }
     }
 
-    .np_box {}
-
     .store_search {
         height: 50vw;
         box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
         border-radius: 1rem 1rem 0 0;
-
 
         .search_title {
             background-color: #2F2EA5;
@@ -189,6 +186,7 @@
     }
 
 
+
     #__react-kakao-maps-sdk___Map {
 
 
@@ -227,6 +225,7 @@
 
 }
 
+//무한 슬라이드 에니메이션
 @keyframes slidemove {
     0% {
         transform: translateX(-50%);
@@ -237,6 +236,7 @@
     }
 }
 
+//텍스트 에니메이션
 @keyframes animate {
     0% {
         transform: scale(1);
@@ -252,4 +252,40 @@
         transform: scale(1);
         opacity: 0;
     }
+}
+
+
+//lg size 
+@media (max-width: 992px) {
+    .section_store {
+        padding: 1.5rem 0;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+        }
+
+        #__react-kakao-maps-sdk___Map {
+            min-height: 50vh;
+        }
+
+        .store_search {
+            min-height: 50vw;
+            height: unset;
+            margin-top: 3rem;
+        }
+
+
+        .store_loof {
+            padding: 1rem;
+
+            ul {
+                li {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+
 }

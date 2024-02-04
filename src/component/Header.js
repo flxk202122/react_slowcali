@@ -64,21 +64,23 @@ function Header(props) {
                   props.datasrc.gnb.map((el, idx) => {
                     return (
                       <li key={idx} className={`${el.gnb_cls} ${showTab === idx ? "active" : ""}`} onClick={() => { setshowTab(idx) }}>
-                        <Link to="/">{el.gnb_nm}</Link>
-                        {showTab === idx &&
+                        <Link to={`/${el.gnb_href}`}>{el.gnb_nm}</Link>
+                        {
+                          showTab === idx &&
                           <ul className="ul2d position-absolute">
                             {
                               el.ultwo.map((eel, iidx) => {
                                 return (
                                   <li key={iidx}>
-                                    <Link to="/">{eel.gnb_nm}</Link>
+                                    <Link to={`/${eel.gnb_href}`}>{eel.gnb_nm}</Link>
                                   </li>
                                 )
                               })
                             }
                           </ul>
                         }
-                        {showTab === idx &&
+                        {
+                          showTab === idx &&
                           <div className='bg_box position-absolute d-none d-md-block' style={{
                             backgroundImage: `url(./img/${el.gnb_bg})`,
                             backgroundRepeat: 'no-repeat',
@@ -96,7 +98,7 @@ function Header(props) {
           </div>
         </div>
       </div>
-    </header>
+    </header >
   )
 }
 

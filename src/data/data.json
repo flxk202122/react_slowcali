@@ -61,7 +61,7 @@
             },
             {
                 "gnb_nm": "창업문의",
-                "gnb_href": "",
+                "gnb_href": "Founded",
                 "gnb_cls": "",
                 "gnb_bg": "tab_come.jpeg",
                 "ultwo": []
@@ -1125,6 +1125,61 @@
                         "loof": ""
                     }
                 ]
+            }
+        ]
+    },
+    "sectionFounded": {
+        "founded_txt": "창업을 꿈꾸는 점주님을 기다립니다",
+        "founded_list": [
+            {
+                "founded_nm": "창업문의",
+                "founded_txt": "홈페이지 및 고객센터 접수",
+                "founded_bg": "open_list_1.jpg"
+            },
+            {
+                "founded_nm": "상권 담당자 배정",
+                "founded_txt": "정보공개서 제공 및 프랜차이즈 사업 설명",
+                "founded_bg": "open_list_2.jpg"
+            },
+            {
+                "founded_nm": "상권분석 및 가계약",
+                "founded_txt": "상권조사, 사업타당성 분석 점포 결정 및 본사 승인",
+                "founded_bg": "open_list_3.jpg"
+            },
+            {
+                "founded_nm": "본계약",
+                "founded_txt": "가맹 계약 체결 및 개점 계획 협의",
+                "founded_bg": "open_list_4.jpg"
+            },
+            {
+                "founded_nm": "현장교육",
+                "founded_txt": "오픈 준비 체크 조리 및 판매 실습",
+                "founded_bg": "open_list_5.jpg"
+            },
+            {
+                "founded_nm": "매장 완공 및 세팅",
+                "founded_txt": "주방기기, 집기 비품, 원.부자재 입고 등 세팅",
+                "founded_bg": "open_list_6.jpg"
+            },
+            {
+                "founded_nm": "본사교육",
+                "founded_txt": "매장운영 노하우 및 지식공유",
+                "founded_bg": "open_list_7.jpg"
+            },
+            {
+                "founded_nm": "인테리어 및 시공 인허가 준비",
+                "founded_txt": "점포 실측 및 공사 실시 각종 인/허가 증명서 발급",
+                "founded_bg": "open_list_8.jpg"
+            },
+            {
+                "founded_nm": "매장오픈",
+                "founded_txt": "슈퍼바이저 현장지원으로 원활한 매장 운영 가능",
+                "founded_bg": "open_list_9.jpg"
+            },
+            {
+                "founded_nm": "지속관리",
+                "founded_txt": "정보공개서 제공 및 프랜차이즈 사업 설명",
+                "founded_bg": "open_list_10.jpg"
             }
         ]
     },

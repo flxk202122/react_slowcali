@@ -20,11 +20,11 @@
     display: block;
     background: url(./img/logo_white.png) center center no-repeat;
     width: 60%;
-    height: 3rem;
-    background-size: 100%;
-    top: 45%;
+    height: 4rem;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-size: cover;
 
 }
 
@@ -45,4 +45,15 @@
     padding-top: 30%;
     background: url(./img/logo_white.png) center center no-repeat;
     background-size: 100%;
+}
+
+
+
+@media (max-width: 992px) {
+    #visual_logo::before {
+        width: 50%;
+        height: 2rem;
+        top: 45%;
+        left: 50%;
+    }
 }

@@ -9,8 +9,6 @@ import './scss/store.scss';
 
 
 export default function KakaoMap(props) {
-
-  // const [slideState, setSlideState] = useState(0);
   const [picMarker, setMarker] = useState(0);
   const [bigLocation, setLocation] = useState(0);
 
@@ -28,29 +26,6 @@ export default function KakaoMap(props) {
       slideRef.current.swiper.slidePrev();
     }
   };
-
-  // const prevPage = () =>
-  //   setSlideState((prev) =>
-  //     prev > 0
-  //       ? (slideRef.current?.scroll({
-  //         left: 400 * (prev - 1),
-  //         behavior: "smooth",
-  //       }),
-  //         prev - 1)
-  //       : prev
-  //   );
-
-  // const nextPage = () =>
-  //   setSlideState((prev) =>
-  //     prev < slide_length
-  //       ? (slideRef.current?.scroll({
-  //         left: 400 * (prev + 1),
-  //         behavior: "smooth",
-  //       }),
-  //         prev + 1)
-  //       : prev
-  //   );
-
 
   //지도 지역별로 이동
   useEffect(() => {
@@ -102,7 +77,7 @@ export default function KakaoMap(props) {
       <div className="container">
         <h2 className="col-12">{props.datasrc.h2}</h2>
         <div className="d-lg-flex justify-content-between">
-          <Map Map className="col-5" center={{ lat: props.datasrc.store_list[bigLocation].store[picMarker].latitude, lng: props.datasrc.store_list[bigLocation].store[picMarker].longitude }} level={3}>
+          <Map Map className="col-lg-5 col-12" center={{ lat: props.datasrc.store_list[bigLocation].store[picMarker].latitude, lng: props.datasrc.store_list[bigLocation].store[picMarker].longitude }} level={3}>
             {props.datasrc.store_list.map((el, idx) => (
               bigLocation === idx &&
               el.store.map((eel, iidx) => (
@@ -151,21 +126,6 @@ export default function KakaoMap(props) {
                   })
                 }
               </Swiper>
-              {/* <div className="location_wrapper">
-                <ul className="location_list d-flex">
-                  {
-                    props.datasrc.store_list.map((el, idx) => {
-                      return (
-
-                        <li key={idx} onClick={() => {
-                          setLocation(idx)
-                        }} ref={slideRef}> <Link className={`${bigLocation === idx ? "active" : ""}`}>{el.map}</Link></li>
-
-                      )
-                    })
-                  }
-                </ul>
-              </div> */}
               <button className="next" onClick={goNext}><span className="visually-hidden">뒤로가기</span></button>
             </div>
             <div className="wrapper position-relative overflow-auto">
@@ -177,7 +137,7 @@ export default function KakaoMap(props) {
                       return (
                         <div key={iidx} className="border-bottom p-2">
                           <Link className="d-flex align-items-center" onClick={() => { setMarker(iidx) }}>
-                            <span className="img_box col-4 d-flex align-items-center"><img src="./img/logo_blue.png" alt="슬로우캘리 이미지" /></span>
+                            <span className="img_box col-4 d-flex align-items-center  justify-content-around"><img src="./img/logo_blue.png" alt="슬로우캘리 이미지" /></span>
                             <div className="col-8 px-2">
                               <span className="store_nm">{`[${el.map}]${eel.nm}점`}</span>
                               <ul>

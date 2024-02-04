@@ -1,8 +1,11 @@
  #ft {
      background-color: #2625A1;
+     //  z-index: 100;
+     //  bottom: 0;
+     //  width: 100%;
 
      .container {
-         padding: 2rem 0;
+         padding: 1rem 0;
 
          h2 {
              height: 100%;
@@ -24,11 +27,6 @@
              display: inline-block;
              font-size: 2rem;
              margin-left: 1rem;
-
-
-             i {
-                 &::after {}
-             }
          }
      }
 

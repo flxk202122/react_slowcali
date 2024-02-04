@@ -25,3 +25,10 @@ button {
     border: none;
     background-color: transparent;
 }
+
+form {
+    input {
+        border: none;
+        background-color: transparent;
+    }
+}

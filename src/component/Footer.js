@@ -7,7 +7,7 @@ function Footer(props) {
 
     return (
         <>
-            <footer id='ft'>
+            <footer id='ft' className='position-relative'>
                 <div className='container d-flex justify-content-between'>
                     <div className='d-flex'>
                         <h2><Link to="/"><span className='visually-hidden'>슬로우캘리 로고이미지</span></Link></h2>

@@ -1,0 +1,186 @@
+.founded {
+    .txt_box {
+
+        padding: 4rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+
+        p {
+            color: #2625A1;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #2625A1;
+            font-weight: 600;
+        }
+
+        span {
+            color: #2625A1;
+            font-weight: 600;
+        }
+    }
+
+    .founded_step {
+        background-color: #F5F5F7;
+        padding: 4rem 0;
+
+        ul {
+            li {
+                min-height: 220px;
+                background-color: #fff;
+                border: 1.5px solid #2625A1;
+                padding: 2rem;
+
+
+                .num_list {
+                    z-index: 10;
+                    color: #fff;
+                    width: 3rem;
+                    line-height: 3rem;
+                    background-color: #2625A1;
+                    border-radius: 100%;
+                    top: -10%;
+                }
+
+                p {
+                    .list_nm {
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        font-size: 0.8rem;
+                    }
+
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 90%;
+                    height: 90%;
+                    border: 0.8px solid #2625A1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+        }
+    }
+
+    .together {
+        background-color: #FFF1CC;
+        margin: 2rem 0;
+        padding-bottom: 5rem;
+
+        .together_form {
+            background-color: #fff;
+            width: 60%;
+            margin: 0 auto;
+            border: 3px solid #2625A1;
+
+            fieldset {
+                z-index: 100;
+                text-align: center;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 7rem;
+                line-height: 7rem;
+                background-color: #2625A1;
+                border-radius: 100%;
+                color: #fff;
+                font-weight: 500;
+            }
+
+            ul {
+
+                z-index: 10;
+                padding: 4rem;
+
+                &::after {
+                    content: '';
+                    background-color: #F5F5F7;
+                    border: 1px solid #2625A1;
+                    width: 90%;
+                    height: 90%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+
+                li {
+                    left: 0;
+                    width: 100%;
+                    z-index: 100;
+                    line-height: 4rem;
+                    border-bottom: 1px solid #2625A1;
+
+                    &::after {
+                        font-family: 'bootstrap-icons';
+                        content: "\F586";
+                        color: #2625A1;
+                        position: absolute;
+                        right: 0;
+                    }
+
+
+
+                    strong {
+                        color: #2625A1;
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+
+
+            .btns {
+                width: 90%;
+                margin: 0 auto;
+                padding-bottom: 1rem;
+
+                .btn_a,
+                .btn_b {
+                    padding: 0.5rem 1rem;
+                }
+
+                .btn_a {
+                    background-color: #2625A1;
+
+                    label {
+                        color: #fff;
+                    }
+                }
+
+                .btn_b {
+                    border: 2px solid #2625A1;
+                    color: #2625A1;
+                    font-weight: 400;
+                    background-color: #F5F5F7;
+                    box-sizing: border-box;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #2625A1;
+                        color: #F5F5F7;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    img {
+
+        width: 4rem;
+    }
+}

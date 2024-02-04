@@ -1,68 +1,8 @@
-@media (max-width: 767.98px) {
-    #hd {
-        #tab_list {
-
-            width: 100% !important;
-
-            //mobile tab 
-            li.down {
-                position: relative;
-
-                &.active {
-                    >a {
-                        &::after {
-                            font-family: 'bootstrap-icons';
-                            content: ' \F282';
-                        }
-                    }
-                }
-
-                >a {
-                    &::after {
-                        font-family: 'bootstrap-icons';
-                        content: ' \F286';
-                        font-size: 1rem;
-                        font-weight: 500;
-                        position: absolute;
-                        color: #2625A1;
-                        right: 0.5rem;
-                    }
-
-
-                }
-            }
-
-            .ul2d {
-                position: relative !important;
-                left: 0 !important;
-
-                li {
-                    background-color: #F5F5F7;
-
-                    &::after {
-                        content: '';
-                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-                        position: absolute;
-                        width: 100%;
-                    }
-
-                    a {
-                        padding-left: 0 !important;
-
-                    }
-                }
-
-            }
-
-            &::after {
-                display: none;
-            }
-        }
-    }
-}
-
 // header common
 #hd {
+    // z-index: 100;
+    // width: 100%;
+    // top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     background-color: #2625A1;
     transition: 0.5s;
@@ -374,4 +314,67 @@
     }
 
 
+}
+
+@media (max-width: 767.98px) {
+    #hd {
+        #tab_list {
+
+            width: 100% !important;
+
+            //mobile tab 
+            li.down {
+                position: relative;
+
+                &.active {
+                    >a {
+                        &::after {
+                            font-family: 'bootstrap-icons';
+                            content: ' \F282';
+                        }
+                    }
+                }
+
+                >a {
+                    &::after {
+                        font-family: 'bootstrap-icons';
+                        content: ' \F286';
+                        font-size: 1rem;
+                        font-weight: 500;
+                        position: absolute;
+                        color: #2625A1;
+                        right: 0.5rem;
+                    }
+
+
+                }
+            }
+
+            .ul2d {
+                position: relative !important;
+                left: 0 !important;
+
+                li {
+                    background-color: #F5F5F7;
+
+                    &::after {
+                        content: '';
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                        position: absolute;
+                        width: 100%;
+                    }
+
+                    a {
+                        padding-left: 0 !important;
+
+                    }
+                }
+
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
 }

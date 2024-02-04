@@ -1,16 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import YouTube from "react-youtube"
+import { Link } from 'react-router-dom';
 
 
 import './scss/mainvisual.scss';
 
 
 function Mainvisual(props) {
+
+    const [showAnimation, setShowAnimation] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowAnimation(true);
+        }, 3000);
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
+
     return (
         <div id='videowrapper'>
-            <div id="visual_logo" className='move'>
-                <div className='bar'></div>
-                <span className='active'>창업문의 바로가기</span>
+            <div id="visual_logo" className={showAnimation ? 'active' : ''}>
+                <div className='spin'>
+                    <img className='food_logo' src="./img/logo_visual.png" alt="푸드 로고" />
+                    <span><Link to='/Founded'>창업문의 바로가기</Link></span>
+                </div>
             </div>
             <YouTube
                 className='video'
