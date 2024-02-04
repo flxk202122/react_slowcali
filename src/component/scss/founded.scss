@@ -175,6 +175,11 @@
 
             }
 
+            textarea {
+                border: none;
+                background-color: transparent;
+            }
+
         }
 
     }
@@ -183,4 +188,76 @@
 
         width: 4rem;
     }
+}
+
+@media (max-width: 992px) {
+
+    .founded {
+        .txt_box {
+            padding: 2rem 0;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem
+            }
+        }
+
+        .founded_step {
+            padding: 2rem 0;
+
+            ul {
+                li {
+                    min-height: 0;
+                    padding: 1rem;
+
+                    .num_list {
+                        position: unset !important;
+                    }
+
+                    img {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+
+        .together {
+
+            .txt_box {
+                padding: 4rem 0;
+
+                h3 {
+                    font-size: 1.2rem !important;
+                }
+
+                span {
+                    font-size: 1.5rem !important;
+                }
+            }
+
+            .together_form {
+                width: 80vw;
+
+                fieldset {
+                    z-index: 100;
+                    text-align: center;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 5rem;
+                    line-height: 5rem;
+                    background-color: #2625A1;
+                    border-radius: 100%;
+                    color: #fff;
+                    font-weight: 500;
+                }
+
+
+
+            }
+        }
+    }
+
 }
