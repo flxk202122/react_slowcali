@@ -22,7 +22,7 @@ function Founded(props) {
                         {
                             props.datasrc.founded_list.map((el, idx) => {
                                 return (
-                                    <li key="idx" className='position-relative d-flex flex-lg-column  align-items-center justify-content-lg-center justify-content-around col-lg-2 col-12 mx-2 mb-lg-5 mb-2'>
+                                    <li key="idx" className='position-relative d-flex flex-lg-column align-items-center justify-content-lg-center justify-content-around col-lg-2 col-12 mx-2 mb-lg-5 mb-2'>
                                         <span className='num_list position-absolute text-center'>{idx + 1}</span>
                                         <img className='col-lg-auto col-4' src={`./img/${el.founded_bg}`} alt="" />
                                         <p className='row text-lg-center col-lg-auto col-8'>
@@ -83,7 +83,7 @@ function Founded(props) {
                                 </li>
                             </ul>
                             <div className='btns position-relative d-flex align-items-center justify-content-between'>
-                                <div className='btn_a col-5 justify-content-around d-flex'>
+                                <div className='btn_a col-6 col-lg-5 justify-content-around d-flex'>
                                     <label htmlFor="ok_myadmin">개인정보 수집 및 이용동의</label>
                                     <input type="radio" id='ok_myadmin' {...register('ok_myadmin', { required: true })} />
                                 </div>

@@ -7,6 +7,7 @@ import Menu from './Menu'
 import Store from './Store'
 import Footer from './Footer'
 import Founded from './Founded'
+import Success from './Success'
 
 import { Route, Routes } from 'react-router-dom';
 
@@ -24,11 +25,12 @@ function Fullslow() {
                 <Route path='/' element={<Mainvisual />} />
                 <Route path="/Brandstory" element={
                     <>
-                        <Brandstory datasrc={datainfo.sectionbrand} />
                         <Brandbrand datasrc={datainfo.sectionstory} />
+                        <Brandstory datasrc={datainfo.sectionbrand} />
                     </>} />
                 <Route path='/Menu' element={<Menu datasrc={datainfo.sectionmenu} />} />
                 <Route path='/Store' element={<Store datasrc={datainfo.sectionstore} />} />
+                <Route path='/Success' element={<Success datasrc={datainfo.sectionsuccess} />} />
                 <Route path='/Founded' element={<Founded datasrc={datainfo.sectionFounded} />} />
             </Routes>
 

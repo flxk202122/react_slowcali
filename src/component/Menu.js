@@ -21,7 +21,7 @@ function Menu(props) {
 
 
 	return (
-		<section id='menu'>
+		<section className='menu'>
 			<div className='container position-relative'>
 				<h2 className='visually-hidden'>{props.datasrc.h2}</h2>
 				<ul className='subject_list d-flex justify-content-center'>
@@ -47,8 +47,18 @@ function Menu(props) {
 			</div>
 			<div className='container position-relative'>
 				<div className='top_box'>
-					<h3>Topping</h3>
-					<ul className='d-flex align-items-center col'>
+					<h3>
+						{
+							props.datasrc.subject_list.map((el, idx) => {
+								return menuTab === idx ? (
+									<>
+										{props.datasrc.subject_list[idx].topping_list.length > 0 ? "Topping" : ""}
+									</>
+								) : null;
+							})
+						}
+					</h3>
+					<ul className='d-flex align-items-center col row mx-0 justify-content-around'>
 						{
 							props.datasrc.subject_list.map((el, idx) => (
 								<React.Fragment key={idx}>
@@ -56,7 +66,7 @@ function Menu(props) {
 										el.topping_list
 											.filter((eel) => eel.href === "only")
 											.map((el, subIdx) => (
-												<li className={`row text-center col-2 ${el.href}`} key={subIdx}>
+												<li className={`row text-center col-lg-2 col-3 ${el.href}`} key={subIdx}>
 													<Link className='order-1' to=''>{el.nm}</Link>
 													<img className='order-0' src={`./img/menu/${el.bg}`} alt="" />
 												</li>
@@ -74,7 +84,7 @@ function Menu(props) {
 										el.topping_list
 											.filter((eel) => eel.href === "")
 											.map((eel, iidx) => (
-												<li className={`row text-center ${eel.href}`} key={iidx}><Link className='order-1' to=''>{eel.nm}</Link>
+												<li className={`row text-center col-lg-1 col-3${eel.href}`} key={iidx}><Link className='order-1' to=''>{eel.nm}</Link>
 													<img className='order-0' src={`./img/menu/${eel.bg}`} alt="" />
 												</li>
 											))
@@ -86,15 +96,21 @@ function Menu(props) {
 					</ul>
 				</div>
 				<div>
-					<h3 className=''>
+					<h3>
 						menu
-						{/* {
-							props.datasrc.subject_list &&
-							props.datasrc.subject_list
-								.fiter(el => el.nm !== "칼로리").map()
-
-						} */}
 					</h3>
+					<div className='kal_bg'>
+						{
+							props.datasrc.subject_list.map((el, idx) =>
+								menuTab === idx &&
+								idx === 4 && (
+									<React.Fragment key={idx}>
+										<img src={`./img/${el.kal_bg}`} alt="" />
+									</React.Fragment>
+								)
+							)
+						}
+					</div>
 					<ul className='tab_list d-flex justify-content-center'>
 						{
 							props.datasrc.subject_list.map((el, idx) => (
@@ -112,9 +128,10 @@ function Menu(props) {
 						}
 					</ul>
 
+
 					<ul className='kal_list'>
 						{
-							props.datasrc.subject_list.map((l, id) => (
+							props.datasrc.subject_list.map((el, id) => (
 								menuTab === id &&
 								props.datasrc.subject_list[id].menu_list.map((el, idx) => {
 									return (
@@ -123,8 +140,8 @@ function Menu(props) {
 												{
 													el.menu_content.map((eel, iidx) => {
 														return (
-															<li key={iidx} className='position-relative row col-md-4 '>
-																<Link className='col-12 d-flex justify-content-center align-items-center'>{eel.menu_nm}</Link>
+															<li key={iidx} className='position-relative row col-md-4  align-items-center'>
+																<Link className='col-12 d-flex justify-content-lg-center align-items-center'>{eel.menu_nm}</Link>
 																<div className='menu_box col-6 col-md-12 align-items-center'>
 																	<img className='w-100' src={`./img/menu/${eel.menu_bg}`} alt="" />
 																</div>
@@ -166,15 +183,8 @@ function Menu(props) {
 										</li>
 									)
 								})
-
-
 							))
-
 						}
-					</ul>
-
-					<ul className='kal_tab'>
-
 					</ul>
 				</div>
 			</div >
@@ -183,3 +193,4 @@ function Menu(props) {
 }
 
 export default Menu
+

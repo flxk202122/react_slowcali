@@ -1,0 +1,328 @@
+.success {
+
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 10;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .txt_box {
+
+        h3 {
+            color: #2625A1;
+            font-weight: 600;
+            font-size: 2rem;
+
+        }
+
+        p {
+            margin-top: 1rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+
+        }
+
+        margin-bottom: 5rem;
+    }
+
+    .mycircle {
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .rounded-text {
+            top: 0;
+            width: 20vw;
+            height: 20vw;
+            text-transform: uppercase;
+            transform: rotate(-103deg);
+            font-weight: 300;
+            z-index: 100;
+            font-family: Raleway;
+        }
+
+        .rotating {
+            animation: rotating 12s linear infinite;
+        }
+
+        .coloring {
+            animation: coloring 12s linear infinite;
+        }
+    }
+
+    .bg_box {
+        height: 25rem;
+        overflow: hidden;
+
+        &::before {
+            z-index: 1;
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            top: -120px;
+        }
+    }
+
+    .why {
+        padding: 5rem 0;
+
+        .why_list {
+
+            li {
+                box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.05);
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                padding: 0.5rem;
+                box-sizing: border-box;
+
+                .img_box {
+                    overflow: hidden;
+
+                    &:hover {
+                        img {
+                            scale: 1.2;
+                        }
+                    }
+
+                    img {
+                        min-height: 240px;
+                        transition: 0.5s;
+                    }
+                }
+
+                .list_txt {
+                    min-height: 5rem;
+
+                    strong {
+                        color: #2625A1;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .article {
+        .article_list {
+
+            li {
+                padding: 5rem 0;
+
+                strong {
+                    font-size: 1.8rem;
+                    color: #2625A1;
+                    font-weight: 400;
+                }
+
+                &:nth-of-type(1) {
+                    border-bottom: 1px solid #cbcbd2;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    line-height: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .line_banner {
+        background-color: #2625A1;
+
+        h3,
+        p {
+            color: #fff;
+        }
+    }
+
+    .upup {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+}
+
+
+@keyframes rotating {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes coloring {
+    0% {
+        fill: #fff;
+    }
+
+    100% {
+        fill: #fff;
+    }
+}
+
+// lg-size
+@media (max-width: 992px) {
+
+    .success {
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .txt_box {
+
+            h3 {
+                font-size: 1.2rem;
+
+            }
+
+            p {
+                margin-top: 1rem;
+                font-weight: 400;
+                font-size: 0.9rem;
+
+            }
+
+            margin-bottom: 2.5rem;
+        }
+
+        .bg_box {
+            height: 12rem;
+
+            img {
+                scale: 1.2;
+                top: -50px;
+            }
+        }
+
+
+        .why {
+            padding: 2.5rem 0;
+
+            .why_list {
+
+                li {
+                    .img_box {
+                        img {
+                            min-height: 200px;
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .line_banner {
+            .txt_box {
+                padding: 0 1rem;
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .article {
+            .article_list {
+                li {
+                    padding: 2.5rem 0;
+
+                    &:nth-of-type(1) {
+                        border-bottom: 1px solid #cbcbd2;
+                    }
+
+                    img {
+                        max-height: 350px;
+                        width: auto;
+                    }
+
+                    .txt_box {
+                        margin-top: 2.5rem;
+
+                        strong {
+                            font-size: 1rem;
+                            color: #2625A1;
+                            font-weight: 400;
+                        }
+
+
+                        p {
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                            font-weight: 300;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .success {
+
+        .why {
+            padding: 2.5rem 0;
+
+            .why_list {
+
+                li {
+                    .list_txt {
+                        min-height: 3rem;
+
+                        strong {
+                            font-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .img_box {
+                        img {
+                            min-height: 100px;
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        .mycircle {
+
+            .rounded-text {
+                width: 30vw;
+                height: 30vw;
+            }
+        }
+    }
+}

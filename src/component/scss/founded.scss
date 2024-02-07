@@ -211,15 +211,36 @@
             ul {
                 li {
                     min-height: 0;
-                    padding: 1rem;
+                    padding: 0.5rem;
+
+                    &::after {
+                        display: none;
+                    }
 
                     .num_list {
                         position: unset !important;
+                        width: 2rem;
+                        line-height: 2rem;
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        .list_nm {
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                        }
+
+                        span {
+                            font-size: 0.7rem;
+                        }
+
+
                     }
 
                     img {
                         width: 3rem;
                     }
+
                 }
             }
         }
@@ -227,19 +248,19 @@
         .together {
 
             .txt_box {
-                padding: 4rem 0;
+                padding: 2rem 0;
 
                 h3 {
                     font-size: 1.2rem !important;
                 }
 
                 span {
-                    font-size: 1.5rem !important;
+                    font-size: 1rem !important;
                 }
             }
 
             .together_form {
-                width: 80vw;
+                width: 90vw;
 
                 fieldset {
                     z-index: 100;
@@ -254,8 +275,43 @@
                     font-weight: 500;
                 }
 
+                ul {
+                    li {
+                        line-height: 1.5rem;
+
+                        &::after {
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            font-size: 0.6rem;
+                        }
+
+                        label {
+                            font-size: 0.7rem;
+                        }
+
+                        strong {
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
 
 
+                .btns {
+
+                    .btn_a,
+                    .btn_b {
+                        padding: 0.2rem 0.5rem;
+                        font-size: 0.7rem;
+                        font-weight: 300;
+                    }
+
+                    .btn_b {
+                        border: 1px solid #2625A1;
+                        font-weight: 200;
+
+                    }
+
+                }
             }
         }
     }

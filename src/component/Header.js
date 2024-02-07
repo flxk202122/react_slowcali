@@ -63,7 +63,7 @@ function Header(props) {
                 {
                   props.datasrc.gnb.map((el, idx) => {
                     return (
-                      <li key={idx} className={`${el.gnb_cls} ${showTab === idx ? "active" : ""}`} onClick={() => { setshowTab(idx) }}>
+                      <li key={idx} className={`${el.gnb_cls} ${showTab === idx ? "active" : ""}`} onClick={() => { setshowTab(idx); settoggleBtn(!toggleBtn) }}>
                         <Link to={`/${el.gnb_href}`}>{el.gnb_nm}</Link>
                         {
                           showTab === idx &&

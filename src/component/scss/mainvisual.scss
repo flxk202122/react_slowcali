@@ -151,4 +151,20 @@
             width: 200vw;
         }
     }
+
+
+    @media (max-width: 576px) {
+        #visual_logo {
+            width: 60vw;
+            height: 60vw;
+
+            &::before {
+                width: 60%;
+            }
+
+            span {
+                font-size: 0.5rem;
+            }
+        }
+    }
 }

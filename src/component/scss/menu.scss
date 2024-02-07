@@ -1,50 +1,9 @@
-#menu {
-
+.menu {
     padding: 2rem 0;
 
+    img {
 
-    @media (max-width: 767.98px) {
-        .kal_box {
-            display: inline-block !important;
-        }
-
-        .box {
-            li {
-
-
-                a {}
-            }
-        }
-    }
-
-
-    @media(min-width: 767.98px) {
-
-        .kal_list {
-            .box {
-
-                >li {
-
-                    &:hover {
-                        background-color: #F5F5F7;
-
-                        .kal_box {
-                            display: block;
-                        }
-
-                        .menu_box {
-                            display: none;
-                        }
-
-                        a {
-                            background-color: #2625A1;
-                            color: #fff;
-                        }
-
-                    }
-                }
-            }
-        }
+        max-width: 100%;
     }
 
     h3 {
@@ -58,19 +17,14 @@
     .top_box {
         ul {
             li {
-                &:not(.only) {}
+                padding: 0;
 
                 a {
+                    color: #6f6f6f;
                     font-size: 0.8rem;
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
-        }
-
-
-        img {
-
-            max-width: 100%;
         }
     }
 
@@ -173,6 +127,47 @@
                         display: none;
                         max-width: 100%;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .kal_box {
+        display: inline-block !important;
+        font-size: 0.8rem;
+
+        li {
+            line-height: 1.5rem !important;
+        }
+    }
+}
+
+
+@media(min-width: 767.98px) {
+
+    .kal_list {
+        .box {
+
+            >li {
+
+                &:hover {
+                    background-color: #F5F5F7;
+
+                    .kal_box {
+                        display: block;
+                    }
+
+                    .menu_box {
+                        display: none;
+                    }
+
+                    a {
+                        background-color: #2625A1;
+                        color: #fff;
+                    }
+
                 }
             }
         }

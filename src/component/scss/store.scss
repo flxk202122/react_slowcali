@@ -58,7 +58,11 @@
                     width: 100%;
                     border: transparent;
                     padding: 0.5rem;
+                    background-color: #fff;
+
+                    &::placeholder {}
                 }
+
             }
 
             .search_btn {
