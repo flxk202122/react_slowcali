@@ -8,7 +8,7 @@ function Founded(props) {
     const [founded, setFounded] = useState([]);
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const onSubmit = async (data) => {
+    const onSubmit = async (data, e) => {
 
         try {
             e.preventDefault();
