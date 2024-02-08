@@ -30,6 +30,7 @@ function Founded(props) {
         try {
             const response = await productApi(tn);
             console.log('서버 응답:', response);
+            setFounded([...response.data])
 
 
         } catch (error) {
@@ -52,7 +53,8 @@ function Founded(props) {
                 <div className='founded_step'>
                     <ul className='d-flex row mx-0 justify-content-lg-between justify-content-around'>
                         {
-                            props.datasrc.founded_list.map((el, idx) => {
+                            founded &&
+                            founded.map((el, idx) => {
                                 return (
                                     <li key="idx" className='position-relative d-flex flex-lg-column align-items-center justify-content-lg-center justify-content-around col-lg-2 col-12 mx-2 mb-lg-5 mb-2'>
                                         <span className='num_list position-absolute text-center'>{idx + 1}</span>
