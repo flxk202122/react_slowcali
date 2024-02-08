@@ -15,7 +15,7 @@ function Founded(props) {
             // 리액트에서 일단 먼저확인 보내기 전
             console.log("리엑트 formData>>>>>", data);
             //
-            const response = await productApi('myform', data);
+            const response = await productApi('together_form', data);
             // 노드에서 보내줌
             console.log('서버 응답:', response);
 
