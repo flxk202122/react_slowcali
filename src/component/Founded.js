@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { productApi } from './api/axiosApi'
+import { productApi } from './api/axioApi'
 
 import './scss/founded.scss'
 
