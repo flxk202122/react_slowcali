@@ -1,0 +1,34 @@
+body * {
+    font-family: "Noto Sans KR, Raleway";
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-weight: 300;
+
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+form {
+    input {
+        border: none;
+        background-color: transparent;
+    }
+}
