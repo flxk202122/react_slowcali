@@ -37,36 +37,21 @@ export default function KakaoMap(props) {
 
     <section className="section_store position-relative overflow-hidden">
       <div className="ani_box position-relative text-center">
-        <span className="ani_h position-relative">{
-          props.datasrc.s1.split('|').map(el => {
-            return (
-              <>
-                {el}
-                <br></br>
-              </>
-            )
-          })
-        }
+        <span className="ani_h position-relative">
+          2년만에<br />
+          120호점 돌파
         </span>
-        <span className="ani_p">{
-          props.datasrc.s2.split('|').map(el => {
-            return (
-              <>
-                {el}
-                <br></br>
-              </>
-            )
-          })
-        }</span>
+        <span className="ani_p">지금 이 시간에도<br />
+          다수의 가맹이 계약 진행중에 있습니다.</span>
       </div>
       <div className="store_loof">
         <ul className="d-flex">
           {
             props.datasrc.store_list.map((el, idx) => (
-              props.datasrc.store_list[idx].store.map((eel, iidx) => {
+              props.datasrc.store_list[idx].store_map.map((eel, iidx) => {
                 return (
                   <li key={iidx}>
-                    {eel.nm}점
+                    {eel.map_nm}점
                   </li>
                 )
               })
@@ -75,15 +60,15 @@ export default function KakaoMap(props) {
         </ul>
       </div>
       <div className="container">
-        <h2 className="col-12">{props.datasrc.h2}</h2>
+        <h2 className="col-12">매장안내</h2>
         <div className="d-lg-flex justify-content-between">
-          <Map Map className="col-lg-5 col-12" center={{ lat: props.datasrc.store_list[bigLocation].store[picMarker].latitude, lng: props.datasrc.store_list[bigLocation].store[picMarker].longitude }} level={3}>
+          <Map Map className="col-lg-5 col-12" center={{ lat: props.datasrc.store_list[bigLocation].store_map[picMarker].map_latitude, lng: props.datasrc.store_list[bigLocation].store_map[picMarker].map_longitude }} level={3}>
             {props.datasrc.store_list.map((el, idx) => (
               bigLocation === idx &&
-              el.store.map((eel, iidx) => (
-                <MapMarker key={iidx} position={{ lat: parseFloat(eel.latitude), lng: parseFloat(eel.longitude) }}>
+              el.store_map.map((eel, iidx) => (
+                <MapMarker key={iidx} position={{ lat: parseFloat(eel.map_latitude), lng: parseFloat(eel.map_longitude) }}>
                   <div className="pin">
-                    {`[${el.map}]${eel.nm}점`}
+                    {`[${el.store_nm}]${eel.map_nm}점`}
                   </div>
                 </MapMarker>
               ))
@@ -120,7 +105,7 @@ export default function KakaoMap(props) {
 
                       }}
 
-                        ref={slideRef}> <Link className={`${bigLocation === idx ? "active" : ""}`}>{el.map}</Link></SwiperSlide>
+                        ref={slideRef}> <Link className={`${bigLocation === idx ? "active" : ""}`}>{el.store_nm}</Link></SwiperSlide>
 
                     )
                   })
@@ -133,25 +118,25 @@ export default function KakaoMap(props) {
                 {
                   props.datasrc.store_list.map((el, idx) => (
                     bigLocation === idx &&
-                    props.datasrc.store_list[idx].store.map((eel, iidx) => {
+                    props.datasrc.store_list[idx].store_map.map((eel, iidx) => {
                       return (
                         <div key={iidx} className="border-bottom p-2">
                           <Link className="d-flex align-items-center" onClick={() => { setMarker(iidx) }}>
                             <span className="img_box col-4 d-flex align-items-center  justify-content-around"><img src="./img/logo_blue.png" alt="슬로우캘리 이미지" /></span>
                             <div className="col-8 px-2">
-                              <span className="store_nm">{`[${el.map}]${eel.nm}점`}</span>
+                              <span className="store_nm">{`[${el.store_nm}]${eel.map_nm}점`}</span>
                               <ul>
                                 <li>
                                   <span>매장주소</span>
-                                  <span>{eel.adress}</span>
+                                  <span>{eel.map_adress}</span>
                                 </li>
                                 <li>
                                   <span>전화번호</span>
-                                  <span>{eel.number}</span>
+                                  <span>{eel.map_number}</span>
                                 </li>
                                 <li>
                                   <span>영업시간</span>
-                                  <span>{eel.open}</span>
+                                  <span>{eel.map_open}</span>
                                 </li>
                               </ul>
                             </div>

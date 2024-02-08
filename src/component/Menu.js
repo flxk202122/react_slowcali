@@ -23,7 +23,7 @@ function Menu(props) {
 	return (
 		<section className='menu'>
 			<div className='container position-relative'>
-				<h2 className='visually-hidden'>{props.datasrc.h2}</h2>
+				<h2 className='visually-hidden'>슬로우캘리 전체 메뉴 리스트</h2>
 				<ul className='subject_list d-flex justify-content-center'>
 					{props.datasrc.subject_list.map((el, idx) => (
 						<BtnLi
